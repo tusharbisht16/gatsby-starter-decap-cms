@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
 import github from "../img/github-icon.svg";
-import logo from "../img/logo.svg";
+import logo from "../img/logo.jpeg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,9 +11,10 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center">
           <div className="flex items-center">
-            <Link to="/" className="py-2" title="Logo">
+            <Link to="/" className="py-1" title="Logo">
               <img src={logo} alt="Kaldi" className="w-[88px]" />
             </Link>
+            <h1 className="text-[28px] font-bold">Riddhi Siddhi Trader</h1>
           </div>
           
           {/* Hamburger menu */}
@@ -28,7 +29,8 @@ const Navbar = () => {
           </button>
           
           {/* Navigation menu */}
-          <ul className={`lg:flex flex-grow justify-between items-center ${isOpen ? 'flex flex-col absolute top-16 left-0 right-0 bg-white shadow-lg' : 'hidden'}`}>
+        <div>
+        <ul className={`lg:flex flex-grow justify-between items-center ${isOpen ? 'flex flex-col absolute top-16 left-0 right-0 bg-white shadow-lg' : 'hidden'}`}>
             <div className={`lg:flex items-center ${isOpen ? 'flex flex-col w-full' : ''}`}>
               <li>
                 <Link to="/about" className="block px-4 py-2 text-gray-700 hover:text-gray-900">
@@ -40,21 +42,21 @@ const Navbar = () => {
                   Products
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/blog" className="block px-4 py-2 text-gray-700 hover:text-gray-900">
                   Blog
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link to="/contact" className="block px-4 py-2 text-gray-700 hover:text-gray-900">
                   Contact
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link to="/contact/examples" className="block px-4 py-2 text-gray-700 hover:text-gray-900">
                   Form Examples
                 </Link>
-              </li>
+              </li> */}
             </div>
             
             <li className="text-center">
@@ -64,12 +66,15 @@ const Navbar = () => {
                 rel="noopener noreferrer"
                 className="inline-block px-4 py-2"
               >
-                <span className="inline-block">
+                {/* <span className="inline-block">
                   <img src={github} alt="Github" className="h-6 w-6" />
-                </span>
+                </span> */}
               </a>
             </li>
           </ul>
+
+        </div>
+         
         </div>
       </div>
     </nav>

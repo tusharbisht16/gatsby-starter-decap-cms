@@ -4,20 +4,19 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
-// eslint-disable-next-line
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+    <section className="py-16 bg-gradient-to-b from-gray-50">
+      <div className="container mx-auto px-4">
+        <div className="flex justify-center">
+          <div className="w-full max-w-4xl">
+            <div className="py-8">
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 {title}
               </h2>
-              <PageContent className="content" content={content} />
+              <PageContent className="prose max-w-none" content={content} />
             </div>
           </div>
         </div>

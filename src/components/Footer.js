@@ -8,7 +8,7 @@ import vimeo from "../img/social/vimeo.svg";
 
 const Footer = () => {
   return (
-    <footer className="bg-black text-white">
+    <footer className="bg-[#001523] text-white">
       <div className="text-center">
         <img
           src={logo}
@@ -16,7 +16,7 @@ const Footer = () => {
           className="w-56 h-40 inline-block" 
         />
       </div>
-      <div className="text-center bg-black text-white">
+      <div className="text-center bg-[#001523] text-white">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen">
             <div>

@@ -8,6 +8,9 @@ import Layout from "../components/Layout";
 import FullWidthImage from "../components/FullWidthImage";
 import FullScreenSlider from "../components/slider";
 import CategoryCards from "../components/cards";
+import RequirementsForm from "../components/form";
+import SpinningContact from "../components/contactus";
+import RequirementsForm2 from "../components/form2";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -24,9 +27,12 @@ export const IndexPageTemplate = ({
   return (
     <div>
       {/* <FullWidthImage img={heroImage} title={title} subheading={subheading} /> */}
+      
       <FullScreenSlider />
      
       <CategoryCards/>
+      <RequirementsForm />
+      <SpinningContact/>
     </div>
   );
 };
