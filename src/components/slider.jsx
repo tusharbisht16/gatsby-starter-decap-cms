@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const FullScreenSlider = () => {
+const FullScreenSlider = () => { 
   const images = [
     { id: 1, url: "/img/demo.jpeg", alt: "Slide 1" },
     { id: 2, url: "/img/og-image.jpg", alt: "Slide 2" },
@@ -30,7 +30,7 @@ const FullScreenSlider = () => {
 
   return (
     <div className="relative  h-[600px] overflow-hidden">
-      <div 
+      <div
         className="flex h-full transition-transform duration-300"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >

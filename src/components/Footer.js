@@ -1,121 +1,130 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/logo.svg";
-import facebook from "../img/social/facebook.svg";
-import instagram from "../img/social/instagram.svg";
-import twitter from "../img/social/twitter.svg";
-import vimeo from "../img/social/vimeo.svg";
-
+import logo from "../img/footerLogo.jpeg"
 const Footer = () => {
   return (
-    <footer className="bg-[#001523] text-white">
-      <div className="text-center">
-        <img
-          src={logo}
-          alt="Kaldi"
-          className="w-56 h-40 inline-block" 
-        />
+    <footer className="bg-slate-900 pt-[60px] flex justify-around text-gray-300">
+      <div className="px-[20px] ">
+        <div className="bg-orange-600 w-24 h-24 rounded-lg inline-flex items-center justify-center my-8">
+     
+          <img src={logo} alt="Kaldi" className="w-[98px]" />
+        </div>
       </div>
-      <div className="text-center bg-[#001523] text-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen">
+      <div className="text-center bg-slate-900 text-gray-300">
+        <div className="container mx-auto px-4 pb-12">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-left">
+            {/* Quick Links */}
             <div>
-              <section>
-                <ul className="space-y-2">
-                  <li>
-                    <Link to="/" className="hover:text-gray-300">
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:text-gray-300" to="/about">
-                      About
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:text-gray-300" to="/products">
-                      Products
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:text-gray-300" to="/contact/examples">
-                      Form Examples
-                    </Link>
-                  </li>
-                  <li>
-                    <a
-                      className="hover:text-gray-300"
-                      href="/admin/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Admin
-                    </a>
-                  </li>
-                </ul>
-              </section>
+              <h3 className="text-white text-xl font-semibold mb-4">Quick Links</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link to="/" className="hover:text-white transition duration-300">
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/about" className="hover:text-white transition duration-300">
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/products" className="hover:text-white transition duration-300">
+                    Products
+                  </Link>
+                </li>
+              
+                <li>
+                  <Link to="/blogs" className="hover:text-white transition duration-300">
+                    Blogs
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="hover:text-white transition duration-300">
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/privacy-policy" className="hover:text-white transition duration-300">
+                    Privacy Policy
+                  </Link>
+                </li>
+              </ul>
             </div>
+
+            {/* Our Product Range */}
             <div>
-              <section>
-                <ul className="space-y-2">
-                  <li>
-                    <Link className="hover:text-gray-300" to="/blog">
-                      Latest Stories
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="hover:text-gray-300" to="/contact">
-                      Contact
-                    </Link>
-                  </li>
-                </ul>
-              </section>
+              <h3 className="text-white text-xl font-semibold mb-4">Our Product Range</h3>
+              <ul className="space-y-2">
+                <li>
+                  <Link to="/products/spices" className="hover:text-white transition duration-300">
+                    Spices
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/products/dry-fruits" className="hover:text-white transition duration-300">
+                    Dry Fruits
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/products/fruits-vegetables" className="hover:text-white transition duration-300">
+                    Fruits & Vegetables
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/products/oil" className="hover:text-white transition duration-300">
+                    Oil
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/products/coconut" className="hover:text-white transition duration-300">
+                    Coconut and Products
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/products/engineering" className="hover:text-white transition duration-300">
+                    Engineering
+                  </Link>
+                </li>
+              </ul>
             </div>
-            <div className="flex justify-center space-x-4">
-              <a 
-                title="facebook" 
-                href="https://facebook.com"
-                className="hover:opacity-75"
-              >
-                <img
-                  src={facebook}
-                  alt="Facebook"
-                  className="w-4 h-4"
-                />
-              </a>
-              <a 
-                title="twitter" 
-                href="https://twitter.com"
-                className="hover:opacity-75"
-              >
-                <img
-                  src={twitter}
-                  alt="Twitter"
-                  className="w-4 h-4"
-                />
-              </a>
-              <a 
-                title="instagram" 
-                href="https://instagram.com"
-                className="hover:opacity-75"
-              >
-                <img
-                  src={instagram}
-                  alt="Instagram"
-                  className="w-4 h-4"
-                />
-              </a>
-              <a 
-                title="vimeo" 
-                href="https://vimeo.com"
-                className="hover:opacity-75"
-              >
-                <img
-                  src={vimeo}
-                  alt="Vimeo"
-                  className="w-4 h-4"
-                />
-              </a>
+
+            {/* Stay Connected */}
+            <div className="md:col-span-2">
+              <h3 className="text-white text-xl font-semibold mb-4">Stay Connected</h3>
+              <div className="space-y-2">
+                <p className="mb-2">
+                  <span className="block text-white">Address:</span>
+                  <a 
+                    href="https://maps.google.com/?q=Office No C8, Venus Garden, Thite Vasti, Kharadi, Pune City, Pune, Maharashtra" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition duration-300"
+                  >
+                    Office No C8, Venus Garden,<br />
+                    Thite Vasti, Kharadi,<br />
+                    Pune City, Pune, Maharashtra<br />
+                    Pin:411014
+                  </a>
+                </p>
+                <p>
+                  <span className="text-white">Mobile:</span>{' '}
+                  <a 
+                    href="tel:+917249310616" 
+                    className="text-green-400 hover:text-green-300 transition duration-300"
+                  >
+                    +91 724 931 0616
+                  </a>
+                </p>
+                <p>
+                  <span className="text-white">Email:</span>{' '}
+                  <a 
+                    href="mailto:info@hindaviempire.com" 
+                    className="hover:text-white transition duration-300"
+                  >
+                    info@hindaviempire.com
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>

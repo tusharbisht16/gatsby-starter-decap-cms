@@ -1,0 +1,291 @@
+.imgContainer {
+    aspect-ratio: 16/9;
+  }
+  
+  .bgGradient {
+    background: linear-gradient(
+      98.91deg,
+      rgba(247, 81, 112, 0.89) -19.51%,
+      rgba(180, 81, 213, 0.89) 114.97%
+    );
+  }
+  
+  .cardGradient {
+    background: linear-gradient(
+      98.91deg,
+      rgba(247, 81, 112, 0.89) -19.51%,
+      rgba(180, 81, 213, 0.89) 114.97%
+    );
+  }
+  
+  .sliderContainer :global(.slick-track) {
+    display: flex !important;
+    align-items: center;
+  }
+  
+  .textGradient {
+    background: linear-gradient(139.79deg, #5e77e7 19.65%, #8e61dd 76.91%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .cardContainer {
+    aspect-ratio: 116/145;
+  }
+  
+  .normalCardContainer {
+    aspect-ratio: 25/28;
+  }
+  
+  .navGradient {
+    background: linear-gradient(
+      to right,
+      #f7f8fd 0%,
+      #f5f1f8 70%,
+      #f4eaf5 85%,
+      #f4d9ef 100%
+    );
+  }
+  
+  .cardGradient2 {
+    background: linear-gradient(
+      to bottom,
+      #ebe1ff 0%,
+      #ebe1ff 70%,
+      #ebe1ff 85%,
+      #dee9fc 100%
+    );
+  }
+  
+  .cardGradient1 {
+    background: linear-gradient(
+      153.73deg,
+      rgba(235, 225, 255, 0.59) 2.32%,
+      rgba(222, 233, 252, 0.059) 86.54%
+    );
+  }
+  
+  .singleCardBgImg {
+    background-image: url(../img/singleCardBg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  .singleCardBgImg2 {
+    background-image: url(../img/singleCardBg2.png);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+  }
+  /* styles.css */
+  @keyframes slide {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  .animateslide {
+    animation: slide 10s linear infinite;
+  }
+  
+  .productFeatureCardGradient {
+    background: linear-gradient(
+      to bottom,
+      #fcfdfd 0%,
+      #e9f6fa 60%,
+      #dbf2f9 70%,
+      #d2eff9 100%
+    );
+  }
+  
+  .simpleCardGradientPink {
+    background: linear-gradient(
+      180deg,
+      rgba(253, 253, 253, 0.59) 0.63%,
+      rgba(248, 250, 253, 0.59) 26.57%,
+      rgba(252, 226, 241, 0.59) 100%
+    );
+  }
+  
+  .simpleCardGradientBlue {
+    background: linear-gradient(
+      6.73deg,
+      rgba(253, 253, 253, 0.36) 21.78%,
+      rgba(185, 219, 234, 0.1224) 100.47%
+    );
+  }
+  
+  /* Ensure the slider container acts as a flexbox */
+  .slider {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: stretch;
+  }
+  
+  .sliderItem {
+    display: flex;
+    flex: 1; /* Make each item take up equal width */
+    height: 100%; /* Ensure the card stretches to the full height */
+    align-items: stretch; /* Make all children inside the item stretch to the same height */
+  }
+  
+  .sliderItem > * {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  .pciCardGradient {
+    background: linear-gradient(
+      93.86deg,
+      rgba(78, 212, 187, 0.2) -4.96%,
+      rgba(155, 217, 235, 0.2) 44.72%,
+      rgba(160, 199, 216, 0.2) 94.95%
+    );
+  }
+  
+  .pciTextGradient {
+    background: linear-gradient(91.84deg, #7a3090 1.52%, #19647a 66.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .bulkPurchaseCardGradient {
+    background: linear-gradient(
+      93.86deg,
+      rgba(212, 78, 136, 0.2) -4.96%,
+      rgba(235, 155, 210, 0.2) 44.72%,
+      rgba(241, 189, 217, 0.2) 94.95%
+    );
+  }
+  
+  @media (min-width: 480px) and (max-width: 600px) {
+    .productFeatureCardGradient{
+      height: 620px !important;
+    }
+  }
+  
+  @media (min-width: 0px) and (max-width: 640px) {
+    .navGradient {
+      background: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff 70%,
+        #ffffff 85%,
+        #ffffff 100%
+      );
+    }
+  }
+  @media (min-width: 0px) and (max-width: 540px) {
+    .singleCardBgImg {
+      background-image: url(../img/singleCardBgMobile.png);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+    }
+    .singleCardBgImg2{
+      background-image: url(../img/singleCardBgMobile.png);
+      background-size: cover;
+      background-position: center;
+      width: 100%;
+    }
+  }
+  
+  /* styles.css or global.css */
+  .slideDown {
+    transition: max-height 0.8s ease-out, opacity 0.8s ease-out;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  
+  .slideDownOpen {
+    max-height: 500px; /* Adjust this value as needed */
+    opacity: 1;
+    transition-delay: 0.5s; /* Adjust the delay as needed */
+  }
+  
+  .rotate {
+    transition: transform 0.3s ease-out;
+  }
+  
+  .rotateUp {
+    transform: rotate(180deg);
+  }
+  
+  .rotateDown {
+    transform: rotate(0deg);
+  }
+  
+  .hoverContainer{
+    display: flex !important;
+  }
+  
+  .gradientHeaderText {
+    background: linear-gradient(253.01deg, #0096ff 7.68%, #9600ff 95.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  /* Default styles for the class */
+  /* .screenwidthrange {
+    background-color: white; 
+    color: black;
+    padding: 20px;
+  } */
+  
+  /* For screen width between 360px and 370px */
+  /* @media (min-width: 360px) and (max-width: 370px) {
+    .screenwidthrange {
+      padding-inline: 40px;
+    }
+  } */
+  /* @media (min-width: 340px) and (max-width: 3590px) {
+    .screenwidthrange {
+      padding-inline: 40px;
+    }
+  } */
+  
+  /* For screen width between 371px and 379px */
+  /* @media (min-width: 371px) and (max-width: 379px) {
+    .screenwidthrange {
+      padding-inline: 40px;
+    }
+  } */
+  
+  /* For screen width between 380px and 399px */
+  /* @media (min-width: 380px) and (max-width: 399px) {
+    .screenwidthrange {
+      padding-inline: 50px;
+    }
+  } */
+  /* @media (min-width: 400px) and (max-width: 500px) {
+    .screenwidthrange {
+      padding-inline: 10px;
+    }
+  } */
+  /* @media (min-width: 500px) and (max-width: 600px) {
+    .screenwidthrange {
+      
+    }
+  } */
+  
+  /* @media (min-width: 601px) and (max-width: 650px) {
+    .screenwidthrange {
+    padding-inline: 10px;
+    }
+  } */
+  /* @media (min-width: 500px) and (max-width: 600px) {
+    .screenwidthrange {
+    padding-inline: 10px;
+    }
+  }
+  @media (min-width: 500px) and (max-width: 600px) {
+    .screenwidthrange {
+    padding-inline: 10px;
+    }
+  } */
+  

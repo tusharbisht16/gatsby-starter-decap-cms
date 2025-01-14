@@ -26,7 +26,10 @@ export const ProductPageTemplate = ({
   const fullWidthImage = getImage(fullImage) || fullImage;
 
   return (
-    <div className="content">
+    <div className="content py-[60px]">
+      {/* <div  className="w-full">
+       <img src={} className="w-full"></img>
+      </div> */}
   <PrivacyPolicyAccordion/>
      
     </div>

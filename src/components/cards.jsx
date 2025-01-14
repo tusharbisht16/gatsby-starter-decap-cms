@@ -5,32 +5,38 @@ const CategoryCards = () => {
     {
       id: 1,
       title: "Spices",
-      image: "/img/demo.jpeg"
+      image: "/img/demo.jpeg",
+      discription: ""
     },
     {
       id: 2,
       title: "Dry Fruits",
-      image: '/img/demo.jpeg'
+      image: '/img/demo.jpeg',
+        discription: ""
     },
     {
       id: 3,
       title: "Fruits & Vegetables",
-      image: "/img/demo.jpeg"
+      image: "/img/demo.jpeg",
+        discription: ""
     },
     {
       id: 3,
       title: "Fruits & Vegetables",
-      image: "/img/demo.jpeg"
+      image: "/img/demo.jpeg",
+        discription: ""
     },
     {
       id: 3,
       title: "Fruits & Vegetables",
-      image: "/img/demo.jpeg"
+      image: "/img/demo.jpeg",
+        discription: ""
     },
     {
       id: 3,
       title: "Fruits & Vegetables",
-      image: "/img/demo.jpeg"
+      image: "/img/demo.jpeg",
+        discription: ""
     }
   ];
 

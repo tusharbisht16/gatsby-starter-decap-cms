@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import HindaviHero from "../components/aboutUsSection2";
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -17,10 +18,12 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
                 {title}
               </h2>
               <PageContent className="prose max-w-none" content={content} />
+              
             </div>
           </div>
         </div>
       </div>
+      <HindaviHero />
     </section>
   );
 };

@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
-import { Phone, Mail, MessageCircle, X } from 'lucide-react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FaWhatsapp } from 'react-icons/fa';
+import { HiMail } from 'react-icons/hi';
+import { IoClose } from 'react-icons/io5';
+import { BsTelephone } from 'react-icons/bs';
+
 const SpinningContact = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,7 +15,7 @@ const SpinningContact = () => {
           onClick={() => setIsOpen(!isOpen)}
           className={`absolute right-0 bg-blue-500 hover:bg-blue-600 text-white rounded-full p-3 shadow-lg transition-all duration-500 ${isOpen ? 'rotate-180' : ''}`}
         >
-          {isOpen ? <X size={24} /> : <Phone size={24} />}
+          {isOpen ? <IoClose size={22} /> : <BsTelephone size={22} />}
         </button>
 
         {/* WhatsApp Button */}
@@ -22,9 +25,7 @@ const SpinningContact = () => {
             isOpen ? '-translate-y-16' : 'translate-y-0 opacity-0 pointer-events-none'
           }`}
         >
-            
-            <FontAwesomeIcon icon={['fab', 'whatsapp']} />
-          {/* <MessageCircle size={24} /> */}
+          <FaWhatsapp size={22} />
         </button>
 
         {/* Email Button */}
@@ -34,7 +35,7 @@ const SpinningContact = () => {
             isOpen ? '-translate-y-32' : 'translate-y-0 opacity-0 pointer-events-none'
           }`}
         >
-          <Mail size={24} />
+          <HiMail size={22} />
         </button>
       </div>
     </div>
