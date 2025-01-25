@@ -4,7 +4,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const FullScreenSlider = () => { 
   const images = [
-    { id: 1, url: "/img/demo.jpeg", alt: "Slide 1" },
+    { id: 1, url: "/img/og-image.jpg", alt: "Slide 1" },
     { id: 2, url: "/img/og-image.jpg", alt: "Slide 2" },
     { id: 3, url: "/img/og-image.jpg", alt: "Slide 3" }
   ];
@@ -29,37 +29,41 @@ const FullScreenSlider = () => {
   };
 
   return (
-    <div className="relative  h-[600px] overflow-hidden">
+    <div className="relative w-full aspect-video overflow-hidden">
       <div
         className="flex h-full transition-transform duration-300"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}
       >
         {images.map((image) => (
-          <img
-            key={image.id}
-            src={image.url}
-            alt={image.alt}
-            className="w-full h-full object-cover flex-shrink-0"
-            loading="lazy"
-          />
+          <div 
+            key={image.id} 
+            className="w-full h-full flex-shrink-0 relative"
+          >
+            <img
+              src={image.url}
+              alt={image.alt}
+              className="w-full h-full object-cover"
+              loading="lazy"
+            />
+          </div>
         ))}
       </div>
 
       <button 
         onClick={goToPrevious}
-        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white"
+        className="absolute left-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white z-10"
       >
         <ChevronLeft size={24} />
       </button>
 
       <button 
         onClick={goToNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white"
+        className="absolute right-4 top-1/2 -translate-y-1/2 p-2 rounded-full bg-black/50 text-white z-10"
       >
         <ChevronRight size={24} />
       </button>
 
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
         {images.map((_, index) => (
           <button
             key={index}
@@ -73,7 +77,7 @@ const FullScreenSlider = () => {
 
       <button
         onClick={() => setIsAutoPlaying(!isAutoPlaying)}
-        className="absolute bottom-4 right-4 px-3 py-1 rounded bg-black/50 text-white text-sm"
+        className="absolute bottom-4 right-4 px-3 py-1 rounded bg-black/50 text-white text-sm z-10"
       >
         {isAutoPlaying ? 'Pause' : 'Play'}
       </button>

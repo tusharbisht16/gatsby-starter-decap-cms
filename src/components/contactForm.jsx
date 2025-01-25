@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, Phone, Mail } from 'lucide-react';
-import img2 from "../img/singleCardBg.png"
+import img2 from "../img/world.jpg"
 const ContactForm = () => {
   return (
     <div className="w-full max-w-6xl mx-auto p-4">

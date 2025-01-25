@@ -1,80 +1,55 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import github from "../img/github-icon.svg";
 import logo from "../img/logo.jpeg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-transparent" role="navigation" aria-label="main-navigation">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-between items-center">
-          <div className="flex items-center">
+    <nav className="bg-transparent relative" role="navigation" aria-label="main-navigation">
+      <div className="container mx-auto px-2 sm:px-4">
+        <div className="flex justify-between items-center py-2 sm:py-4">
+          {/* Logo and Title Container */}
+          <div className="flex items-center space-x-2 sm:space-x-4">
             <Link to="/" className="py-1" title="Logo">
-              <img src={logo} alt="Kaldi" className="w-[88px]" />
+              <img src={logo} alt="Riddhi Siddhi Trader" className="w-[50px] sm:w-[88px]" />
             </Link>
-            <h1 className="text-[28px] font-bold">Riddhi Siddhi Trader</h1>
+            <h1 className="text-[18px] sm:text-[28px] font-bold">Riddhi Siddhi Trader</h1>
           </div>
           
-          {/* Hamburger menu */}
+          {/* Mobile Hamburger Button */}
           <button
-            className="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5"
+            className="lg:hidden z-50 relative"
+            aria-label="Toggle menu"
             aria-expanded={isOpen}
             onClick={() => setIsOpen(!isOpen)}
           >
-            <span className="block w-6 h-0.5 bg-gray-600"></span>
-            <span className="block w-6 h-0.5 bg-gray-600"></span>
-            <span className="block w-6 h-0.5 bg-gray-600"></span>
+            <div className="space-y-1">
+              <span className={`block w-5 h-0.5 bg-gray-600 transition-all duration-300 ${isOpen ? 'rotate-45 translate-y-1.5' : ''}`}></span>
+              <span className={`block w-5 h-0.5 bg-gray-600 transition-all duration-300 ${isOpen ? 'opacity-0' : ''}`}></span>
+              <span className={`block w-5 h-0.5 bg-gray-600 transition-all duration-300 ${isOpen ? '-rotate-45 -translate-y-1.5' : ''}`}></span>
+            </div>
           </button>
           
-          {/* Navigation menu */}
-        <div>
-        <ul className={`lg:flex flex-grow justify-between items-center ${isOpen ? 'flex flex-col absolute top-16 left-0 right-0 bg-white shadow-lg' : 'hidden'}`}>
-            <div className={`lg:flex items-center ${isOpen ? 'flex flex-col w-full' : ''}`}>
-              <li>
-                <Link to="/about" className="block px-4 py-2 text-gray-700 hover:text-gray-900">
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link to="/products" className="block px-4 py-2 text-gray-700 hover:text-gray-900">
-                  Products
-                </Link>
-              </li>
-              {/* <li>
-                <Link to="/blog" className="block px-4 py-2 text-gray-700 hover:text-gray-900">
-                  Blog
-                </Link>
-              </li> */}
-              <li>
-                <Link to="/contact" className="block px-4 py-2 text-gray-700 hover:text-gray-900">
-                  Contact
-                </Link>
-              </li>
-              {/* <li>
-                <Link to="/contact/examples" className="block px-4 py-2 text-gray-700 hover:text-gray-900">
-                  Form Examples
-                </Link>
-              </li> */}
-            </div>
-            
-            <li className="text-center">
-              <a
-                href="https://github.com/decaporg/gatsby-plugin-decap-cms"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-4 py-2"
-              >
-                {/* <span className="inline-block">
-                  <img src={github} alt="Github" className="h-6 w-6" />
-                </span> */}
-              </a>
-            </li>
-          </ul>
-
-        </div>
-         
+          {/* Navigation Menu */}
+          <div className={`
+            fixed inset-0 bg-white z-40 
+            lg:static lg:bg-transparent lg:z-0
+            ${isOpen ? 'block' : 'hidden'} 
+            lg:block
+          `}>
+            <ul className="
+              flex flex-col lg:flex-row 
+              items-center justify-center lg:justify-end 
+              h-full lg:h-auto 
+              space-y-4 lg:space-y-0 lg:space-x-2
+              pt-16 lg:pt-0
+            ">
+              <li><Link to="/about" className="nav-link text-sm sm:text-base">About</Link></li>
+              <li><Link to="/products" className="nav-link text-sm sm:text-base">Products</Link></li>
+              <li><Link to="/contact" className="nav-link text-sm sm:text-base">Contact</Link></li>
+            </ul>
+          </div>
         </div>
       </div>
     </nav>

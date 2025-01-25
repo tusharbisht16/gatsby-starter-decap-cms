@@ -1,98 +1,65 @@
 import React from "react";
 import { Link } from "gatsby";
-import logo from "../img/footerLogo.jpeg"
+import logo from "../img/footerLogo.jpeg";
+import { 
+  Facebook, 
+  Instagram, 
+  Linkedin, 
+  Twitter, 
+  Youtube 
+} from "lucide-react";
+
 const Footer = () => {
+  // Placeholder for social links - you can replace these with actual URLs
+  const socialLinks = {
+    facebook: "https://facebook.com/your-page",
+    instagram: "https://instagram.com/your-profile",
+    linkedin: "https://linkedin.com/company/your-company",
+    twitter: "https://twitter.com/your-handle",
+    youtube: "https://youtube.com/your-channel"
+  };
+
   return (
-    <footer className="bg-slate-900 pt-[60px] flex justify-around text-gray-300">
-      <div className="px-[20px] ">
-        <div className="bg-orange-600 w-24 h-24 rounded-lg inline-flex items-center justify-center my-8">
-     
-          <img src={logo} alt="Kaldi" className="w-[98px]" />
-        </div>
-      </div>
-      <div className="text-center bg-slate-900 text-gray-300">
-        <div className="container mx-auto px-4 pb-12">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-6xl mx-auto text-left">
-            {/* Quick Links */}
-            <div>
-              <h3 className="text-white text-xl font-semibold mb-4">Quick Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link to="/" className="hover:text-white transition duration-300">
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/about" className="hover:text-white transition duration-300">
-                    About
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/products" className="hover:text-white transition duration-300">
-                    Products
-                  </Link>
-                </li>
-              
-                <li>
-                  <Link to="/blogs" className="hover:text-white transition duration-300">
-                    Blogs
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/contact" className="hover:text-white transition duration-300">
-                    Contact
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/privacy-policy" className="hover:text-white transition duration-300">
-                    Privacy Policy
-                  </Link>
-                </li>
-              </ul>
+    <footer className="bg-slate-900 py-12 text-gray-300">
+      <div className="container mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+          {/* Logo Section */}
+          <div className="flex justify-center md:justify-start">
+            <div className="bg-orange-600 w-24 h-24 rounded-lg inline-flex items-center justify-center">
+              <img src={logo} alt="Kaldi" className="w-[98px]" />
             </div>
+          </div>
 
-            {/* Our Product Range */}
-            <div>
-              <h3 className="text-white text-xl font-semibold mb-4">Our Product Range</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link to="/products/spices" className="hover:text-white transition duration-300">
-                    Spices
+          {/* Quick Links */}
+          <div className="text-center md:text-left">
+            <h3 className="text-white text-xl font-semibold mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              {[
+                { to: "/", label: "Home" },
+                { to: "/about", label: "About" },
+                { to: "/products", label: "Products" },
+                { to: "/blogs", label: "Blogs" },
+                { to: "/contact", label: "Contact" },
+                { to: "/privacy-policy", label: "Privacy Policy" }
+              ].map(({ to, label }) => (
+                <li key={to}>
+                  <Link 
+                    to={to} 
+                    className="hover:text-white transition duration-300"
+                  >
+                    {label}
                   </Link>
                 </li>
-                <li>
-                  <Link to="/products/dry-fruits" className="hover:text-white transition duration-300">
-                    Dry Fruits
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/products/fruits-vegetables" className="hover:text-white transition duration-300">
-                    Fruits & Vegetables
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/products/oil" className="hover:text-white transition duration-300">
-                    Oil
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/products/coconut" className="hover:text-white transition duration-300">
-                    Coconut and Products
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/products/engineering" className="hover:text-white transition duration-300">
-                    Engineering
-                  </Link>
-                </li>
-              </ul>
-            </div>
+              ))}
+            </ul>
+          </div>
 
-            {/* Stay Connected */}
-            <div className="md:col-span-2">
+          {/* Contact & Social Section */}
+          <div className="text-center md:text-left">
+            <div className="mb-6">
               <h3 className="text-white text-xl font-semibold mb-4">Stay Connected</h3>
               <div className="space-y-2">
-                <p className="mb-2">
+                <p>
                   <span className="block text-white">Address:</span>
                   <a 
                     href="https://maps.google.com/?q=Office No C8, Venus Garden, Thite Vasti, Kharadi, Pune City, Pune, Maharashtra" 
@@ -125,6 +92,27 @@ const Footer = () => {
                   </a>
                 </p>
               </div>
+            </div>
+
+            {/* Social Icons */}
+            <div className="flex justify-center md:justify-start space-x-4 mt-4">
+              {[
+                { Icon: Facebook, link: socialLinks.facebook },
+                { Icon: Instagram, link: socialLinks.instagram },
+                { Icon: Linkedin, link: socialLinks.linkedin },
+                { Icon: Twitter, link: socialLinks.twitter },
+                { Icon: Youtube, link: socialLinks.youtube }
+              ].map(({ Icon, link }) => (
+                <a
+                  key={link}
+                  href={link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition duration-300"
+                >
+                  <Icon size={24} />
+                </a>
+              ))}
             </div>
           </div>
         </div>
