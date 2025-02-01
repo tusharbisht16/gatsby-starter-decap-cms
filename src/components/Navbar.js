@@ -42,9 +42,10 @@ const Navbar = () => {
               flex flex-col lg:flex-row 
               items-center justify-center lg:justify-end 
               h-full lg:h-auto 
-              space-y-4 lg:space-y-0 lg:space-x-2
+              space-y-4 lg:space-y-0 lg:space-x-6
               pt-16 lg:pt-0
             ">
+              <li><Link to="/" className="nav-link text-sm sm:text-base">Home</Link></li>
               <li><Link to="/about" className="nav-link text-sm sm:text-base">About</Link></li>
               <li><Link to="/products" className="nav-link text-sm sm:text-base">Products</Link></li>
               <li><Link to="/contact" className="nav-link text-sm sm:text-base">Contact</Link></li>

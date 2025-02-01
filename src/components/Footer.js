@@ -4,7 +4,6 @@ import logo from "../img/footerLogo.jpeg";
 import { 
   Facebook, 
   Instagram, 
-  Linkedin, 
   Twitter, 
   Youtube 
 } from "lucide-react";
@@ -14,7 +13,6 @@ const Footer = () => {
   const socialLinks = {
     facebook: "https://facebook.com/your-page",
     instagram: "https://instagram.com/your-profile",
-    linkedin: "https://linkedin.com/company/your-company",
     twitter: "https://twitter.com/your-handle",
     youtube: "https://youtube.com/your-channel"
   };
@@ -24,9 +22,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Logo Section */}
-          <div className="flex justify-center md:justify-start">
-            <div className="bg-orange-600 w-24 h-24 rounded-lg inline-flex items-center justify-center">
-              <img src={logo} alt="Kaldi" className="w-[98px]" />
+          <div className="flex justify-center md:justify-center">
+            <div className="bg-orange-600 w-[300px] h-auto rounded-lg inline-flex items-center justify-center">
+              <img src={logo} alt="Kaldi" className="w-[300px]" />
             </div>
           </div>
 
@@ -99,7 +97,6 @@ const Footer = () => {
               {[
                 { Icon: Facebook, link: socialLinks.facebook },
                 { Icon: Instagram, link: socialLinks.instagram },
-                { Icon: Linkedin, link: socialLinks.linkedin },
                 { Icon: Twitter, link: socialLinks.twitter },
                 { Icon: Youtube, link: socialLinks.youtube }
               ].map(({ Icon, link }) => (

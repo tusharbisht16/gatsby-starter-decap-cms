@@ -4,6 +4,14 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import HindaviHero from "../components/aboutUsSection2";
+const heroProps = {
+  heroImage: "../img/aboutUs.jpeg",
+  title: "Why Choose Riddhi Siddhi?",
+  paragraphs: [
+    "Welcome to Riddhi Siddhi, a premier export company dedicated to delivering the finest farm-fresh agro products from India to the global market. With a commitment to quality, sustainability, and customer satisfaction, we specialize in offering a diverse range of agricultural products sourced directly from India's fertile lands. Our comprehensive product line includes a variety of fruits, vegetables, spices, grains, and other agricultural commodities that cater to the diverse needs of our international clientele.",
+    "At Riddhi Siddhi, we are committed to building long-term relationships with our clients. Whether you are a wholesaler, retailer, or distributor, we are here to provide you with the best farm-fresh agro products from India. Contact us today to discuss your requirements and discover how we can cater to your needs with our high-quality offerings."
+  ]
+};
 
 export const AboutPageTemplate = ({ title, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -23,7 +31,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent }) => {
           </div>
         </div>
       </div>
-      <HindaviHero />
+      <HindaviHero  {...heroProps}/>
     </section>
   );
 };

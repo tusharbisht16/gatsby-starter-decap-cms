@@ -9,7 +9,7 @@ const ContactForm = () => {
       <div className="flex flex-col lg:flex-row gap-8">
         {/* Left Side - Image */}
         <div className="lg:w-1/2">
-          <div className="relative h-64 lg:h-full">
+          <div className="relative  lg:h-full">
             <img 
               src={img2}
               alt="World map digital visualization"

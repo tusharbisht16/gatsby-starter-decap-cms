@@ -5,7 +5,7 @@ const RequirementsForm = () => {
     <div className="relative bg-lime-500 flex items-center min-h-screen">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-30" 
+        className="absolute inset-0 bg-cover bg-center opacity-50" 
         style={{
           backgroundImage: `url(${bgImage})`, 
           zIndex: 1
@@ -32,7 +32,7 @@ const RequirementsForm = () => {
           <div className="w-full md:w-1/2 p-6 md:p-8">
             <form className="space-y-4">
               <div>
-                <label className="text-sm mb-1 block">Name</label>
+                <label className="text-[20px] mb-1 block">Name</label>
                 <input
                   type="text"
                   className="w-full p-2 rounded border focus:outline-none focus:ring-1 focus:ring-green-500"
@@ -41,7 +41,7 @@ const RequirementsForm = () => {
               </div>
 
               <div>
-                <label className="text-sm mb-1 block">Email</label>
+                <label className="text-[20px] mb-1 block">Email</label>
                 <input
                   type="email"
                   className="w-full p-2 rounded border focus:outline-none focus:ring-1 focus:ring-green-500"
@@ -50,7 +50,7 @@ const RequirementsForm = () => {
               </div>
 
               <div>
-                <label className="text-sm mb-1 block">Requirements</label>
+                <label className="text-[20px] mb-1 block">Requirements</label>
                 <textarea
                   rows={4}
                   className="w-full p-2 rounded border focus:outline-none focus:ring-1 focus:ring-green-500"
