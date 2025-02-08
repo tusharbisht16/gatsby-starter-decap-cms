@@ -5,31 +5,31 @@ heading: Discover Quality Products
 subheading: Your One-Stop Shop for All Needs
 
 sliderImages:
-  - url: 
+  - url: /img/blog-index.jpg
     alt: Featured Products Showcase
-  - url: 
+  - url: /img/blog-index.jpg
     alt: Special Offers
-  - url:
+  - url: /img/blog-index.jpg
     alt: New Arrivals
 
 categories:
   - title: Spices
-    image: 
+    image: /img/blog-index.jpg
     description: Premium quality spices from around the world
   - title: Dry Fruits
-    image: 
+    image: /img/blog-index.jpg
     description: Handpicked selection of finest dry fruits
   - title: Fruits & Vegetables
-    image: 
+    image: /img/blog-index.jpg
     description: Fresh and organic produce
   - title: Groceries
-    image: 
+    image: /img/blog-index.jpg
     description: Daily essentials and pantry items
   - title: Beverages
-    image: 
+    image: /img/blog-index.jpg
     description: Refreshing drinks and beverages
   - title: Snacks
-    image: 
+    image: /img/blog-index.jpg
     description: Delicious treats and quick bites
 
 testimonials:

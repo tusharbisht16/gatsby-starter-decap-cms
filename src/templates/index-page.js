@@ -103,12 +103,27 @@ export const pageQuery = graphql`
         heading
         subheading
         sliderImages {
-          url
+          url {
+            childImageSharp {
+              gatsbyImageData(
+                quality: 100
+                layout: FULL_WIDTH
+              )
+            }
+          }
           alt
         }
         categories {
           title
-          image
+          image {
+            childImageSharp {
+              gatsbyImageData(
+                width: 240
+                quality: 64
+                layout: CONSTRAINED
+              )
+            }
+          }
           description
         }
         testimonials {
