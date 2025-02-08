@@ -49,14 +49,22 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   sliderImages: PropTypes.arrayOf(
     PropTypes.shape({
-      url: PropTypes.string,
+      url: PropTypes.shape({
+        childImageSharp: PropTypes.shape({
+          gatsbyImageData: PropTypes.object,
+        }),
+      }),
       alt: PropTypes.string,
     })
   ),
   categories: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
-      image: PropTypes.string,
+      image: PropTypes.shape({
+        childImageSharp: PropTypes.shape({
+          gatsbyImageData: PropTypes.object,
+        }),
+      }),
       description: PropTypes.string,
     })
   ),
