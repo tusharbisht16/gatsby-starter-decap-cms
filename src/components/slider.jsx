@@ -2,12 +2,8 @@ import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const FullScreenSlider = () => { 
-  const images = [
-    { id: 1, url: "/img/og-image.jpg", alt: "Slide 1" },
-    { id: 2, url: "/img/og-image.jpg", alt: "Slide 2" },
-    { id: 3, url: "/img/og-image.jpg", alt: "Slide 3" }
-  ];
+const FullScreenSlider = ({images}) => { 
+ 
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);

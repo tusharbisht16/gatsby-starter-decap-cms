@@ -1,44 +1,7 @@
 import React from 'react';
 
-const CategoryCards = () => {
-  const categories = [
-    {
-      id: 1,
-      title: "Spices",
-      image: "/img/demo.jpeg",
-      discription: ""
-    },
-    {
-      id: 2,
-      title: "Dry Fruits",
-      image: '/img/demo.jpeg',
-        discription: ""
-    },
-    {
-      id: 3,
-      title: "Fruits & Vegetables",
-      image: "/img/demo.jpeg",
-        discription: ""
-    },
-    {
-      id: 3,
-      title: "Fruits & Vegetables",
-      image: "/img/demo.jpeg",
-        discription: ""
-    },
-    {
-      id: 3,
-      title: "Fruits & Vegetables",
-      image: "/img/demo.jpeg",
-        discription: ""
-    },
-    {
-      id: 3,
-      title: "Fruits & Vegetables",
-      image: "/img/demo.jpeg",
-        discription: ""
-    }
-  ];
+const CategoryCards = ({categories}) => {
+ 
 
   return (
     <div className="w-full my-[100px] max-w-7xl mx-auto px-4">

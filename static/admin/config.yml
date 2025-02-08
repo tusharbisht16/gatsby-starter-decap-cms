@@ -40,87 +40,43 @@ collections:
         label: "Landing Page"
         name: "index"
         fields:
-          - {
-              label: "Template Key",
-              name: "templateKey",
-              widget: "hidden",
-              default: "index-page",
-            }
-          - { label: Title, name: title, widget: string }
-          - { label: Image, name: image, widget: image }
-          - { label: Heading, name: heading, widget: string }
-          - { label: Subheading, name: subheading, widget: string }
-          - {
-              label: Mainpitch,
-              name: mainpitch,
-              widget: object,
-              fields:
-                [
-                  { label: Title, name: title, widget: string },
-                  { label: Description, name: description, widget: text },
-                ],
-            }
-          - { label: Description, name: description, widget: string }
-          - {
-              label: Intro,
-              name: intro,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Blurbs,
-                    name: blurbs,
-                    widget: list,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Text, name: text, widget: text },
-                      ],
-                  },
-                ],
-            }
-          - {
-              label: Main,
-              name: main,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  { label: Description, name: description, widget: text },
-                  {
-                    label: Image1,
-                    name: image1,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image2,
-                    name: image2,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                  {
-                    label: Image3,
-                    name: image3,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Image, name: image, widget: image },
-                        { label: Alt, name: alt, widget: string },
-                      ],
-                  },
-                ],
-            }
+      - {
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "index-page"
+        }
+      - { label: Title, name: title, widget: string }
+      - { label: Heading, name: heading, widget: string }
+      - { label: Subheading, name: subheading, widget: string }
+      - {
+          label: "Slider Images",
+          name: "sliderImages",
+          widget: "list",
+          fields: [
+            { label: "Image", name: "url", widget: "image" },
+            { label: "Alt Text", name: "alt", widget: "string" }
+          ]
+        }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "list",
+          fields: [
+            { label: "Title", name: "title", widget: "string" },
+            { label: "Image", name: "image", widget: "image" },
+            { label: "Description", name: "description", widget: "text", required: false }
+          ]
+        }
+      - {
+          label: "Testimonials",
+          name: "testimonials",
+          widget: "list",
+          fields: [
+            { label: "User Name", name: "userName", widget: "string" },
+            { label: "Voice of Customer", name: "voc", widget: "text" }
+          ]
+        }
       - file: "src/pages/about/index.md"
         label: "About"
         name: "about"
