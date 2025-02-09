@@ -15,20 +15,20 @@ export const IndexPageTemplate = ({
   title,
   heading,
   subheading,
-  sliderImages,
-  categories,
-  testimonials,
+  sliderImages = [], // Added default
+  categories = [], // Added default
+  testimonials = [], // Added default
 }) => {
-  // Process slider images
-  const processedSliderImages = sliderImages.map((slide) => ({
-    image: getImage(slide.url), // Convert File node to GatsbyImageData
+  // Process slider images with null check
+  const processedSliderImages = (sliderImages || []).map((slide) => ({
+    image: getImage(slide.url),
     alt: slide.alt,
   }));
 
-  // Process category images
-  const processedCategories = categories.map((category) => ({
+  // Process category images with null check
+  const processedCategories = (categories || []).map((category) => ({
     ...category,
-    image: getImage(category.image), // Convert File node to GatsbyImageData
+    image: getImage(category.image),
   }));
 
   return (
@@ -38,7 +38,7 @@ export const IndexPageTemplate = ({
       <RequirementsForm />
       <SpinningContact />
       <SingleCardSlider>
-        {testimonials.map((testimonial, index) => (
+        {(testimonials || []).map((testimonial, index) => (
           <div key={index} className="p-[16px] lg:px-[12px] lg:py-[32px]">
             <SingleSliderCard
               userName={testimonial.userName}
@@ -52,21 +52,20 @@ export const IndexPageTemplate = ({
   );
 };
 
-// Update PropTypes to reflect GatsbyImageData usage
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   sliderImages: PropTypes.arrayOf(
     PropTypes.shape({
-      url: PropTypes.object, // Now expecting a File node instead of string
+      url: PropTypes.object,
       alt: PropTypes.string,
     })
   ),
   categories: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
-      image: PropTypes.object, // File node
+      image: PropTypes.object,
       description: PropTypes.string,
     })
   ),
