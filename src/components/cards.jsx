@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { GatsbyImage } from 'gatsby-plugin-image';
 const CategoryCards = ({categories}) => {
  
 
@@ -13,11 +13,14 @@ const CategoryCards = ({categories}) => {
             className="flex flex-col bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
           >
             <div className="h-48">
-              <img
-                src={category.image}
-                alt={category.title}
+              
+              <GatsbyImage
+                image={category.image}
+                alt={category.alt}
                 className="w-full h-full object-cover"
+                loading='lazy'
               />
+              
             </div>
             <div className="p-4 bg-white">
               <h3 className="text-xl font-bold text-center text-gray-800">

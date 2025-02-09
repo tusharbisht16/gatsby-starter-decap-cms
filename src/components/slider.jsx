@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
-
+import { GatsbyImage } from 'gatsby-plugin-image';
 const FullScreenSlider = ({images}) => { 
  
 
@@ -35,12 +35,12 @@ const FullScreenSlider = ({images}) => {
             key={image.id} 
             className="w-full h-full flex-shrink-0 relative"
           >
-            <img
-              src={image.url}
-              alt={image.alt}
-              className="w-full h-full object-cover"
-              loading="lazy"
-            />
+            <GatsbyImage
+      image={image.image}
+      alt={image.alt}
+      className="w-full h-full object-cover"
+      loading="lazy"
+    />
           </div>
         ))}
       </div>

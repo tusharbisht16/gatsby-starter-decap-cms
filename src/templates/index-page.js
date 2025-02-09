@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
+import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
 import FullScreenSlider from "../components/slider";
@@ -18,16 +19,24 @@ export const IndexPageTemplate = ({
   categories,
   testimonials,
 }) => {
+  // Process slider images
+  const processedSliderImages = sliderImages.map((slide) => ({
+    image: getImage(slide.url), // Convert File node to GatsbyImageData
+    alt: slide.alt,
+  }));
+
+  // Process category images
+  const processedCategories = categories.map((category) => ({
+    ...category,
+    image: getImage(category.image), // Convert File node to GatsbyImageData
+  }));
+
   return (
     <div>
-      <FullScreenSlider images={sliderImages} />
-      
-      <CategoryCards categories={categories} />
-      
+      <FullScreenSlider images={processedSliderImages} />
+      <CategoryCards categories={processedCategories} />
       <RequirementsForm />
-      
       <SpinningContact />
-      
       <SingleCardSlider>
         {testimonials.map((testimonial, index) => (
           <div key={index} className="p-[16px] lg:px-[12px] lg:py-[32px]">
@@ -43,28 +52,21 @@ export const IndexPageTemplate = ({
   );
 };
 
+// Update PropTypes to reflect GatsbyImageData usage
 IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
   sliderImages: PropTypes.arrayOf(
     PropTypes.shape({
-      url: PropTypes.shape({
-        childImageSharp: PropTypes.shape({
-          gatsbyImageData: PropTypes.object,
-        }),
-      }),
+      url: PropTypes.object, // Now expecting a File node instead of string
       alt: PropTypes.string,
     })
   ),
   categories: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
-      image: PropTypes.shape({
-        childImageSharp: PropTypes.shape({
-          gatsbyImageData: PropTypes.object,
-        }),
-      }),
+      image: PropTypes.object, // File node
       description: PropTypes.string,
     })
   ),
@@ -93,14 +95,6 @@ const IndexPage = ({ data }) => {
   );
 };
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
-};
-
 export default IndexPage;
 
 export const pageQuery = graphql`
@@ -113,10 +107,7 @@ export const pageQuery = graphql`
         sliderImages {
           url {
             childImageSharp {
-              gatsbyImageData(
-                quality: 100
-                layout: FULL_WIDTH
-              )
+              gatsbyImageData(quality: 100, layout: FULL_WIDTH)
             }
           }
           alt
@@ -125,11 +116,7 @@ export const pageQuery = graphql`
           title
           image {
             childImageSharp {
-              gatsbyImageData(
-                width: 240
-                quality: 64
-                layout: CONSTRAINED
-              )
+              gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
             }
           }
           description
