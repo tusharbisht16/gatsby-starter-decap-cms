@@ -3,15 +3,13 @@ templateKey: index-page
 title: Welcome to Our Store
 heading: Discover Quality Products
 subheading: Your One-Stop Shop for All Needs
-
 sliderImages:
-  - url: /img/blog-index.jpg
+  - url: /img/chemex.jpg
     alt: Featured Products Showcase
   - url: /img/blog-index.jpg
     alt: Special Offers
   - url: /img/blog-index.jpg
     alt: New Arrivals
-
 categories:
   - title: Spices
     image: /img/blog-index.jpg
@@ -31,10 +29,10 @@ categories:
   - title: Snacks
     image: /img/blog-index.jpg
     description: Delicious treats and quick bites
-
 testimonials:
   - userName: John Smith
-    voc: Great selection of products and excellent delivery service. Will definitely shop again!
+    voc: Great selection of products and excellent delivery service. Will definitely
+      shop again!
   - userName: Sarah Johnson
     voc: The quality of items is consistently good. Love the easy ordering process.
   - userName: Mike Wilson
