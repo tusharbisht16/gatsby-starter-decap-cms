@@ -33,7 +33,7 @@ testimonials:
   - userName: John Smith
     voc: Great selection of products and excellent delivery service. Will definitely
       shop again!
-    rating: 4
+    rating: 5
   - userName: Sarah Johnson
     voc: The quality of items is consistently good. Love the easy ordering process.
     rating: 4
