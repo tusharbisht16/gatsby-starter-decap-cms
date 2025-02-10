@@ -66,13 +66,13 @@
   }
   
   .singleCardBgImg {
-    background-image: url(../img/singleCardBg.png);
+    background-image: url(../img/singleCardBg.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
   }
   .singleCardBgImg2 {
-    background-image: url(../img/singleCardBg2.png);
+    background-image: url(../img/singleCardBg.jpeg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -182,13 +182,13 @@
   }
   @media (min-width: 0px) and (max-width: 540px) {
     .singleCardBgImg {
-      background-image: url(../img/singleCardBgMobile.png);
+      background-image: url(../img/singleCardBg.jpeg);
       background-size: cover;
       background-position: center;
       width: 100%;
     }
     .singleCardBgImg2{
-      background-image: url(../img/singleCardBgMobile.png);
+      background-image: url(../img/singleCardBg.jpeg);
       background-size: cover;
       background-position: center;
       width: 100%;
