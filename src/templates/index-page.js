@@ -43,6 +43,7 @@ export const IndexPageTemplate = ({
             <SingleSliderCard
               userName={testimonial.userName}
               voc={testimonial.voc}
+              rating ={testimonial.rating}
               index={index}
             />
           </div>
@@ -73,6 +74,7 @@ IndexPageTemplate.propTypes = {
     PropTypes.shape({
       userName: PropTypes.string,
       voc: PropTypes.string,
+      rating :PropTypes.number
     })
   ),
 };
@@ -123,6 +125,7 @@ export const pageQuery = graphql`
         testimonials {
           userName
           voc
+          rating
         }
       }
     }

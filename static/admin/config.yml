@@ -74,7 +74,9 @@ collections:
               widget: "list",
               fields: [
                 { label: "User Name", name: "userName", widget: "string" },
-                { label: "Voice of Customer", name: "voc", widget: "text" }
+                { label: "Voice of Customer", name: "voc", widget: "text" },
+                 { label: "Rating", name: "rating", widget: "number" }
+
               ]
             }
       - file: "src/pages/about/index.md"

@@ -2,10 +2,10 @@ import React from 'react';
 import bgImage from '../img/fruits.jpeg';
 const RequirementsForm = () => {
   return (
-    <div className="relative bg-lime-500 flex items-center min-h-screen">
+    <div className="relative bg-[#36cb2a] flex items-center min-h-screen">
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center opacity-50" 
+        className="absolute inset-0 bg-cover bg-center opacity-15" 
         style={{
           backgroundImage: `url(${bgImage})`, 
           zIndex: 1
