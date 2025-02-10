@@ -33,12 +33,17 @@ testimonials:
   - userName: John Smith
     voc: Great selection of products and excellent delivery service. Will definitely
       shop again!
+    rating: 4
   - userName: Sarah Johnson
     voc: The quality of items is consistently good. Love the easy ordering process.
+    rating: 4
   - userName: Mike Wilson
     voc: Best prices in town and amazing customer service. Highly recommended!
+    rating: 4
   - userName: Emily Brown
     voc: Fresh produce every time. The delivery is always on time.
+    rating: 4
   - userName: David Lee
     voc: Great experience shopping here. The app is very user-friendly.
+    rating: 4
 ---
