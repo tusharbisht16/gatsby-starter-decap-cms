@@ -12,7 +12,7 @@ sliderImages:
     alt: Special Offers
 categories:
   - title: "Red Chilli Powder "
-    image: /img/1000188782.webp
+    image: /img/1000188852.webp
     description: Premium quality spices from around the world
   - title: Dry Fruits
     image: /img/blog-index.jpg
