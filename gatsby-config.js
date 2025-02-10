@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby + Netlify CMS Starter",
+    title: "Riddhi Siddhi Trader",
     description:
-      "This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.",
+      "Riddhi Siddhi Trader is a trusted exporter, delivering high-quality products to global markets. With a focus on reliability and customer satisfaction, we ensure seamless trade solutions at competitive prices. Partner with us for efficient and professional export services worldwide.",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

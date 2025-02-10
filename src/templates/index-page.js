@@ -37,7 +37,7 @@ export const IndexPageTemplate = ({
       <CategoryCards categories={processedCategories} />
       <RequirementsForm />
       <SpinningContact />
-      <SingleCardSlider>
+      <SingleCardSlider primaryText="What Our Clients Says!" >
         {(testimonials || []).map((testimonial, index) => (
           <div key={index} className="p-[16px] lg:px-[12px] lg:py-[32px]">
             <SingleSliderCard

@@ -133,7 +133,7 @@ const SingleCardSlider = ({
         // width: windowWidth <= 1024 ? "100%" : "82%",
       }}
     >
-      <div className="flex flex-col items-start sm:items-center justify-center ">
+      <div className="flex text-[32px] mt-[8px] flex-col items-start sm:items-center font-bold justify-center ">
        {primaryText}
 
         <div className={`mt-[8px]`}>
