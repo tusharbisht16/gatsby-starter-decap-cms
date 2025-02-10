@@ -7,12 +7,12 @@ sliderImages:
   - url: /img/chemex.jpg
     alt: Featured Products Showcase
   - url: /img/blog-index.jpg
-    alt: Special Offers
-  - url: /img/blog-index.jpg
     alt: New Arrivals
+  - url: /img/blog-index.jpg
+    alt: Special Offers
 categories:
-  - title: Spices
-    image: /img/blog-index.jpg
+  - title: "Red Chilli Powder "
+    image: /img/1000188782.webp
     description: Premium quality spices from around the world
   - title: Dry Fruits
     image: /img/blog-index.jpg
