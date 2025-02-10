@@ -29,6 +29,9 @@ categories:
   - title: Snacks
     image: /img/blog-index.jpg
     description: Delicious treats and quick bites
+  - title: Banana
+    image: /img/1000188852.webp
+    description: Banana is good for health
 testimonials:
   - userName: John Smith
     voc: Great selection of products and excellent delivery service. Will definitely
