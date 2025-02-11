@@ -2,7 +2,7 @@ import React from 'react';
 import bgImage from '../img/fruits.jpeg';
 const RequirementsForm = () => {
   return (
-    <div className="relative bg-[#36cb2a] flex items-center min-h-screen">
+    <div className="relative bg-[#36cb2a] flex items-center lg:min-h-screen">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-15" 
@@ -20,7 +20,7 @@ const RequirementsForm = () => {
       
       {/* Content Container */}
       <div 
-        className="container mx-auto px-4 relative z-10" 
+        className="container mx-auto px-2 lg:px-4 relative z-10" 
         style={{ zIndex: 3 }}
       >
         <div className="flex flex-col md:flex-row">

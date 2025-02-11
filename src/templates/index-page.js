@@ -35,7 +35,7 @@ export const IndexPageTemplate = ({
     <div>
       <FullScreenSlider images={processedSliderImages} />
       <CategoryCards categories={processedCategories} />
-      <RequirementsForm />
+      
       <SpinningContact />
       <SingleCardSlider primaryText="What Our Clients Says!" >
         {(testimonials || []).map((testimonial, index) => (
@@ -49,6 +49,7 @@ export const IndexPageTemplate = ({
           </div>
         ))}
       </SingleCardSlider>
+      <RequirementsForm /> 
     </div>
   );
 };
