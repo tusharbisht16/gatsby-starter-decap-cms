@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import useSiteMetadata from "./SiteMetadata";
 import { withPrefix } from "gatsby";
 import "../style/global.css"
+import SpinningContact from "./contactus";
 const TemplateWrapper = ({ children }) => {
   const { title, description } = useSiteMetadata();
   return (
@@ -50,6 +51,7 @@ const TemplateWrapper = ({ children }) => {
         />
       </Helmet>
       <Navbar />
+      <SpinningContact/>
       <div>{children}</div>
       <Footer />
     </div>
