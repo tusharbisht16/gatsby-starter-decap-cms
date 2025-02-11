@@ -4,7 +4,7 @@ title: Welcome to Our Store
 heading: Discover Quality Products
 subheading: Your One-Stop Shop for All Needs
 sliderImages:
-  - url: /img/1000189002.webp
+  - url: /img/1000189733.png
     alt: "Vegitables "
   - url: /img/1000189161.webp
     alt: New Arrivals
