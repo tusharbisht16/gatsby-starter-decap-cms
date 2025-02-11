@@ -17,21 +17,21 @@ categories:
   - title: "Turmaric Powder "
     image: /img/1000188976.webp
     description: "Turmaric powder with natural colour "
-  - title: Fruits & Vegetables
-    image: /img/blog-index.jpg
-    description: Fresh and organic produce
+  - title: "Cumin Powder "
+    image: /img/1000189003.webp
+    description: "Cumin Powder "
   - title: Groceries
     image: /img/blog-index.jpg
     description: Daily essentials and pantry items
-  - title: Beverages
-    image: /img/blog-index.jpg
-    description: Refreshing drinks and beverages
   - title: Banana
     image: /img/1000188852.webp
     description: Banana is good for health
   - title: Snacks
     image: /img/blog-index.jpg
     description: Delicious treats and quick bites
+  - title: Beverages
+    image: /img/blog-index.jpg
+    description: Refreshing drinks and beverages
 testimonials:
   - userName: John Smith
     voc: Great selection of products and excellent delivery service. Will definitely
