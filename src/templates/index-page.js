@@ -16,6 +16,8 @@ export const IndexPageTemplate = ({
   title,
   heading,
   subheading,
+  info1,
+  infoSubTitle,
   sliderImages = [], // Added default
   categories = [], // Added default
   testimonials = [], // Added default
@@ -35,6 +37,15 @@ export const IndexPageTemplate = ({
   return (
     <div>
       <FullScreenSlider images={processedSliderImages} />
+      <div className="text-center my-[60px] mx-[20px] lg:mx-[150px]">
+    <p className="text-[35px] font-bold mb-[30px] " >
+
+{info1}
+    </p>
+    <p className="text-[24px] font-semibold" >
+    {infoSubTitle}
+    </p>
+      </div>
       <CategoryCards categories={processedCategories} />
       <div className="w-full flex justify-center mb-[30px] ">
       <Link 
@@ -67,6 +78,8 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
+  info1 :PropTypes.string,
+  infoSubTitle :PropTypes.string,
   sliderImages: PropTypes.arrayOf(
     PropTypes.shape({
       url: PropTypes.object,
@@ -97,6 +110,8 @@ const IndexPage = ({ data }) => {
       <IndexPageTemplate
         title={frontmatter.title}
         heading={frontmatter.heading}
+        info1 = {frontmatter.info1}
+        infoSubTitle= {frontmatter.infoSubTitle} 
         subheading={frontmatter.subheading}
         sliderImages={frontmatter.sliderImages}
         categories={frontmatter.categories}
@@ -114,6 +129,8 @@ export const pageQuery = graphql`
       frontmatter {
         title
         heading
+        info1
+        infoSubTitle
         subheading
         sliderImages {
           url {

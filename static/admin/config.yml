@@ -48,6 +48,8 @@ collections:
             }
           - { label: Title, name: title, widget: string }
           - { label: Heading, name: heading, widget: string }
+          - { label: Info Title, name: info1, widget: string }
+          - { label: Info subTitle, name: infoSubTitle, widget: string }
           - { label: Product Hero Image, name: productHeroImage, widget: image }
           - { label: Subheading, name: subheading, widget: string }
           - {

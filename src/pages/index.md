@@ -4,6 +4,8 @@ title: Welcome to Our Store
 heading: Discover Quality Products
 subheading: Your One-Stop Shop for All Needs
 productHeroImage: /img/blog-index.jpg
+info1: Riddhi Siddhi Traders Harvesting Freshness, Exporting Quality
+infoSubTitle: Welcome to Riddhi Siddhi Traders, a premier export company dedicated to delivering the finest farm-fresh agro products from India to the global market. With a commitment to quality, sustainability, and customer satisfaction, we specialize in offering a diverse range of agricultural products sourced directly from India’s fertile lands. Our comprehensive product line includes a variety of fruits, vegetables, spices, grains, and other agricultural commodities that cater to the diverse needs of our international clientele.
 sliderImages:
   - url: /img/1000189733.png
     alt: "Vegitables "
