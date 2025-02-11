@@ -6,7 +6,7 @@ subheading: Your One-Stop Shop for All Needs
 sliderImages:
   - url: /img/1000189002.webp
     alt: "Vegitables "
-  - url: /img/blog-index.jpg
+  - url: /img/1000189161.webp
     alt: New Arrivals
   - url: /img/blog-index.jpg
     alt: Special Offers
