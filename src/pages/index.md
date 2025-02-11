@@ -14,9 +14,9 @@ categories:
   - title: "Red Chilli Powder "
     image: /img/1000188852.webp
     description: Premium quality spices from around the world
-  - title: Dry Fruits
-    image: /img/blog-index.jpg
-    description: Handpicked selection of finest dry fruits
+  - title: "Turmaric Powder "
+    image: /img/1000188976.webp
+    description: "Turmaric powder with natural colour "
   - title: Fruits & Vegetables
     image: /img/blog-index.jpg
     description: Fresh and organic produce
@@ -26,12 +26,12 @@ categories:
   - title: Beverages
     image: /img/blog-index.jpg
     description: Refreshing drinks and beverages
-  - title: Snacks
-    image: /img/blog-index.jpg
-    description: Delicious treats and quick bites
   - title: Banana
     image: /img/1000188852.webp
     description: Banana is good for health
+  - title: Snacks
+    image: /img/blog-index.jpg
+    description: Delicious treats and quick bites
 testimonials:
   - userName: John Smith
     voc: Great selection of products and excellent delivery service. Will definitely
