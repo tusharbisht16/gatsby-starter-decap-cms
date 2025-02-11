@@ -26,9 +26,6 @@ categories:
   - title: Beverages
     image: /img/blog-index.jpg
     description: Refreshing drinks and beverages
-  - title: Banana
-    image: /img/1000188852.webp
-    description: Banana is good for health
   - title: Snacks
     image: /img/blog-index.jpg
     description: Delicious treats and quick bites
