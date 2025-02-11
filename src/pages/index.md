@@ -4,9 +4,9 @@ title: Welcome to Our Store
 heading: Discover Quality Products
 subheading: Your One-Stop Shop for All Needs
 sliderImages:
-  - url: /img/chemex.jpg
-    alt: Featured Products Showcase
-  - url: /img/blog-index.jpg
+  - url: /img/1000189733.png
+    alt: "Vegitables "
+  - url: /img/1000189161.webp
     alt: New Arrivals
   - url: /img/blog-index.jpg
     alt: Special Offers
@@ -14,15 +14,15 @@ categories:
   - title: "Red Chilli Powder "
     image: /img/1000188852.webp
     description: Premium quality spices from around the world
-  - title: Dry Fruits
-    image: /img/blog-index.jpg
-    description: Handpicked selection of finest dry fruits
-  - title: Fruits & Vegetables
-    image: /img/blog-index.jpg
-    description: Fresh and organic produce
-  - title: Groceries
-    image: /img/blog-index.jpg
-    description: Daily essentials and pantry items
+  - title: "Turmaric Powder "
+    image: /img/1000188976.webp
+    description: "Turmaric powder with natural colour "
+  - title: "Cumin Powder "
+    image: /img/1000189003.webp
+    description: "Cumin Powder "
+  - title: "Coriander Powder "
+    image: /img/1000189006.webp
+    description: "Coriander Powder "
   - title: Beverages
     image: /img/blog-index.jpg
     description: Refreshing drinks and beverages
