@@ -12,7 +12,10 @@ export const ProductPageTemplate = ({
   heroImage,
 }) => {
   const heroImageData = getImage(heroImage) || heroImage;
-
+const processedCategories = (categories || []).map((category) => ({
+    ...category,
+    image: getImage(category.image),
+  }));
   return (
     <div>
       {/* Hero Banner */}
@@ -25,7 +28,7 @@ export const ProductPageTemplate = ({
       <div className="content">
         <div className="w-full py-[60px]">
           <h1 className="text-[32px] font-bold text-center mb-[40px]">{title}</h1>
-          <CategoryCards categories={categories} />
+          <CategoryCards categories={processedCategories} />
         </div>
       </div>
     </div>
