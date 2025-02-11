@@ -4,8 +4,8 @@ title: Welcome to Our Store
 heading: Discover Quality Products
 subheading: Your One-Stop Shop for All Needs
 sliderImages:
-  - url: /img/chemex.jpg
-    alt: Featured Products Showcase
+  - url: /img/1000189002.webp
+    alt: "Vegitables "
   - url: /img/blog-index.jpg
     alt: New Arrivals
   - url: /img/blog-index.jpg
