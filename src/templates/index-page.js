@@ -10,6 +10,7 @@ import RequirementsForm from "../components/form";
 import SpinningContact from "../components/contactus";
 import SingleCardSlider from "../components/simpleSLider";
 import SingleSliderCard from "../components/singleSlider";
+import { Link } from "gatsby";
 
 export const IndexPageTemplate = ({
   title,
@@ -35,8 +36,16 @@ export const IndexPageTemplate = ({
     <div>
       <FullScreenSlider images={processedSliderImages} />
       <CategoryCards categories={processedCategories} />
-      
-    
+      <div className="w-full flex justify-center mb-[30px] ">
+      <Link 
+              to="/products" 
+              className=" px-6 py-3 bg-green-600 shadow-lg hover:bg-green-700 text-white font-medium rounded-lg transition-colors duration-200"
+            >
+              View More
+            </Link>
+
+      </div>
+     
       <SingleCardSlider primaryText="What Our Clients Says!" >
         {(testimonials || []).map((testimonial, index) => (
           <div key={index} className="p-[16px] lg:px-[12px] lg:py-[32px]">
