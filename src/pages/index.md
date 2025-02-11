@@ -3,6 +3,7 @@ templateKey: index-page
 title: Welcome to Our Store
 heading: Discover Quality Products
 subheading: Your One-Stop Shop for All Needs
+productHeroImage: /img/blog-index.jpg
 sliderImages:
   - url: /img/1000189733.png
     alt: "Vegitables "

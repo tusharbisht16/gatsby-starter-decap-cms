@@ -3,78 +3,56 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import Testimonials from "../components/Testimonials";
-import Pricing from "../components/Pricing";
-import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
+import CategoryCards from "../components/cards";
 import FullWidthImage from "../components/FullWidthImage";
-import PrivacyPolicyAccordion from "../components/privacyPolicyAccordian";
 
-// eslint-disable-next-line
 export const ProductPageTemplate = ({
-  image,
   title,
-  heading,
-  description,
-  intro,
-  main,
-  testimonials,
-  fullImage,
-  pricing,
+  categories,
+  heroImage,
 }) => {
-  const heroImage = getImage(image) || image;
-  const fullWidthImage = getImage(fullImage) || fullImage;
+  const heroImageData = getImage(heroImage) || heroImage;
 
   return (
-    <div className="content py-[60px]">
-      {/* <div  className="w-full">
-       <img src={} className="w-full"></img>
-      </div> */}
-  <PrivacyPolicyAccordion/>
-     
+    <div>
+      {/* Hero Banner */}
+      <FullWidthImage
+        img={heroImageData}
+        className="mb-[40px]"
+      />
+      
+      {/* Products Section */}
+      <div className="content">
+        <div className="w-full py-[60px]">
+          <h1 className="text-[32px] font-bold text-center mb-[40px]">{title}</h1>
+          <CategoryCards categories={categories} />
+        </div>
+      </div>
     </div>
   );
 };
 
 ProductPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
-  heading: PropTypes.string,
-  description: PropTypes.string,
-  intro: PropTypes.shape({
-    blurbs: PropTypes.array,
-  }),
-  main: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    image1: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image2: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-    image3: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  }),
-  testimonials: PropTypes.array,
-  fullImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  pricing: PropTypes.shape({
-    heading: PropTypes.string,
-    description: PropTypes.string,
-    plans: PropTypes.array,
-  }),
+  categories: PropTypes.arrayOf(
+    PropTypes.shape({
+      title: PropTypes.string,
+      image: PropTypes.object,
+      description: PropTypes.string,
+    })
+  ),
+  heroImage: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };
 
 const ProductPage = ({ data }) => {
-  const { frontmatter } = data.markdownRemark;
+  const { title, categories, productHeroImage } = data.indexPage.frontmatter;
 
   return (
     <Layout>
       <ProductPageTemplate
-        image={frontmatter.image}
-        title={frontmatter.title}
-        heading={frontmatter.heading}
-        description={frontmatter.description}
-        intro={frontmatter.intro}
-        main={frontmatter.main}
-        testimonials={frontmatter.testimonials}
-        fullImage={frontmatter.full_image}
-        pricing={frontmatter.pricing}
+        title={title}
+        categories={categories}
+        heroImage={productHeroImage}
       />
     </Layout>
   );
@@ -82,8 +60,12 @@ const ProductPage = ({ data }) => {
 
 ProductPage.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
+    indexPage: PropTypes.shape({
+      frontmatter: PropTypes.shape({
+        title: PropTypes.string,
+        categories: PropTypes.array,
+        productHeroImage: PropTypes.object,
+      }),
     }),
   }),
 };
@@ -91,76 +73,23 @@ ProductPage.propTypes = {
 export default ProductPage;
 
 export const productPageQuery = graphql`
-  query ProductPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+  query ProductPage {
+    indexPage: markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         title
-        image {
+        productHeroImage {
           childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
+            gatsbyImageData(width: 1920, quality: 64, layout: FULL_WIDTH)
           }
         }
-        heading
-        description
-        intro {
-          blurbs {
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
-              }
+        categories {
+          title
+          image {
+            childImageSharp {
+              gatsbyImageData(width: 240, quality: 64, layout: CONSTRAINED)
             }
-            text
           }
-          heading
           description
-        }
-        main {
-          heading
-          description
-          image1 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
-              }
-            }
-          }
-          image2 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(width: 526, quality: 92, layout: CONSTRAINED)
-              }
-            }
-          }
-          image3 {
-            alt
-            image {
-              childImageSharp {
-                gatsbyImageData(quality: 72, layout: FULL_WIDTH)
-              }
-            }
-          }
-        }
-        testimonials {
-          author
-          quote
-        }
-
-        full_image {
-          childImageSharp {
-            gatsbyImageData(quality: 100, layout: FULL_WIDTH)
-          }
-        }
-        pricing {
-          heading
-          description
-          plans {
-            description
-            items
-            plan
-            price
-          }
         }
       }
     }
