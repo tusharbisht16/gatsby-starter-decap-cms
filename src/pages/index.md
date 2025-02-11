@@ -20,9 +20,9 @@ categories:
   - title: "Cumin Powder "
     image: /img/1000189003.webp
     description: "Cumin Powder "
-  - title: Groceries
-    image: /img/blog-index.jpg
-    description: Daily essentials and pantry items
+  - title: "Coriander Powder "
+    image: /img/1000189006.webp
+    description: "Coriander Powder "
   - title: Beverages
     image: /img/blog-index.jpg
     description: Refreshing drinks and beverages
