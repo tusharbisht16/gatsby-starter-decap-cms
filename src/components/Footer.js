@@ -12,9 +12,9 @@ const Footer = () => {
   // Placeholder for social links - you can replace these with actual URLs
   const socialLinks = {
     facebook: "https://facebook.com/your-page",
-    instagram: "https://instagram.com/your-profile",
+    instagram: "https://www.instagram.com/_riddhi_siddhi_trader",
     twitter: "https://twitter.com/your-handle",
-    youtube: "https://youtube.com/your-channel"
+    youtube: "https://youtube.com/@riddhisiddhitrader-h4w?si=YP58jZ6ggs2gedPW"
   };
 
   return (
