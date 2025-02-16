@@ -14,7 +14,7 @@ infoSubTitle: Welcome to Riddhi Siddhi Traders, a premier export company
 productHeroImage: /img/blog-index.jpg
 subheading: Your One-Stop Shop for All Needs
 sliderImages:
-  - url: /img/1000189733.png
+  - url: /img/1000195505.png
     alt: "Vegitables "
   - url: /img/1000189161.webp
     alt: New Arrivals
@@ -33,12 +33,12 @@ categories:
   - title: "Coriander Powder "
     image: /img/1000189006.webp
     description: "Coriander Powder "
-  - title: Beverages
-    image: /img/blog-index.jpg
-    description: Refreshing drinks and beverages
-  - title: Snacks
-    image: /img/blog-index.jpg
-    description: Delicious treats and quick bites
+  - title: "Garam Masala "
+    image: /img/1000198374.webp
+    description: "Garam Masala "
+  - title: "Cashew "
+    image: /img/1000198388.webp
+    description: "Cashew "
 testimonials:
   - userName: John Smith
     voc: Excellent quality products and timely delivery! Riddhi Siddhi Traders is a
