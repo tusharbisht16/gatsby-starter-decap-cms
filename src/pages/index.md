@@ -41,22 +41,27 @@ categories:
     description: Delicious treats and quick bites
 testimonials:
   - userName: John Smith
-    voc: Riddhi Siddhi Traders is a trusted name in the export business, delivering
-      high-quality products with reliability and professionalism. We ensure
-      timely shipments, competitive pricing, and excellent customer service. Our
-      commitment to quality and customer satisfaction makes us a preferred
-      choice for global trade.
+    voc: Excellent quality products and timely delivery! Riddhi Siddhi Traders is a
+      reliable export business with great customer service.
     rating: 5
   - userName: Sarah Johnson
-    voc: The quality of items is consistently good. Love the easy ordering process.
-    rating: 4
+    voc: >+
+      Riddhi Siddhi Traders delivers fresh, high-quality spices with excellent
+      service. A trusted name in spice exports!
+
+    rating: 5
   - userName: Mike Wilson
-    voc: Best prices in town and amazing customer service. Highly recommended!
+    voc: Reliable, efficient, and customer-focused. I highly recommend Riddhi Siddhi
+      Traders for hassle-free exports.
     rating: 4
   - userName: Emily Brown
-    voc: Fresh produce every time. The delivery is always on time.
+    voc: Great experience working with Riddhi Siddhi Traders. They offer competitive
+      pricing and seamless export services!
     rating: 4
   - userName: David Lee
-    voc: Great experience shopping here. The app is very user-friendly.
-    rating: 4
+    voc: >+
+      Riddhi Siddhi Traders exports premium-quality spices with freshness and
+      authenticity. Trusted for reliable service!
+
+    rating: 5
 ---
