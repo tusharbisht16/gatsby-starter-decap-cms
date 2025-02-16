@@ -5,11 +5,11 @@ title: About us
 ---
 <br>
 
-Welcome to Riddhi Siddhi Traders – your trusted partner in global trade. We are an export business committed to delivering high-quality products to international markets, building strong and lasting relationships with clients worldwide.
+Welcome to **Riddhi Siddhi Traders** – your trusted partner in global trade. We are an export business committed to delivering high-quality products to international markets, building strong and lasting relationships with clients worldwide.
 
 <br>
 
-Our Story: Founded with a passion for quality and excellence, Riddhi Siddhi Traders has grown from a local trading company into a reliable name in the export industry. We specialize in offering a wide range of products, including \[list key products you deal with, such as textiles, spices, electronics, etc.], ensuring that our customers receive the finest goods from India and other regions.
+Our Story: Founded with a passion for quality and excellence, **Riddhi Siddhi Traders** has grown from a local trading company into a reliable name in the export industry. We specialize in offering a wide range of products, including \[list key products you deal with, such as textiles, spices, electronics, etc.], ensuring that our customers receive the finest goods from India and other regions.
 
 <br>
 
@@ -29,7 +29,7 @@ Timely Delivery: We understand the importance of time in international trade, an
 
 <br>
 
-Customer-Centric Approach: At Riddhi Siddhi Traders, we put our customers first. Our team works closely with clients to understand their unique requirements and provide tailored solutions.
+Customer-Centric Approach: At **Riddhi Siddhi Traders**, we put our customers first. Our team works closely with clients to understand their unique requirements and provide tailored solutions.
 
 <br>
 
@@ -41,4 +41,4 @@ Our Values: Integrity, Trust, and Excellence are the pillars that uphold our bus
 
 <br>
 
-Whether you're a small business or a large corporation, Riddhi Siddhi Traders is here to help you grow and succeed in the global marketplace. Join us on our journey, and let’s create a prosperous future together.
+Whether you're a small business or a large corporation, **Riddhi Siddhi Traders** is here to help you grow and succeed in the global marketplace. Join us on our journey, and let’s create a prosperous future together.
