@@ -75,7 +75,9 @@ const ContactForm = () => {
                 <MapPin className="w-4 h-4 text-red-700" />
                 <span className="font-semibold">Main Office</span>
               </div>
-              <p className="mt-2 text-sm">Office No 08, Kharadi, Pune, Maharashtra Pin: 411014</p>
+              <p className="mt-2 text-sm">Office No 4, Building No 1, Makane Gaon Bodanpada road Navkar complex 
+District Palghar, City Saphale, Maharashtra 
+pin: 401102</p>
             </div>
             
             <div className="p-4 bg-gray-50 rounded-lg">
@@ -83,8 +85,14 @@ const ContactForm = () => {
                 <Phone className="w-4 h-4 text-red-700" />
                 <span className="font-semibold">Make a Call</span>
               </div>
-              <p className="mt-2 text-sm">+91 72489 10614</p>
-              <p className="text-sm">+91 65954 97007</p>
+              <a 
+                    href="tel:+919225385403" 
+                    target='_blank'
+                  >
+ <p className="mt-2 text-sm">+91 92253 85403</p>
+                  </a>
+             
+             
             </div>
             
             <div className="p-4 bg-gray-50 rounded-lg">
@@ -92,8 +100,12 @@ const ContactForm = () => {
                 <Mail className="w-4 h-4 text-red-700" />
                 <span className="font-semibold">Send a Mail</span>
               </div>
-              <p className="mt-2 text-sm">info@example.com</p>
-              <p className="text-sm">enquiry@example.com</p>
+              <a target='_blank' href="mailto:info@riddhisiddhitrader.com">
+
+              <p  className="mt-2 text-sm">info@riddhisiddhitrader.com</p>
+              </a>
+            
+              
             </div>
           </div>
     </div>
