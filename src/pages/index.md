@@ -2,10 +2,17 @@
 templateKey: index-page
 title: Welcome to Our Store
 heading: Discover Quality Products
-subheading: Your One-Stop Shop for All Needs
-productHeroImage: /img/blog-index.jpg
 info1: Riddhi Siddhi Traders Harvesting Freshness, Exporting Quality
-infoSubTitle: Welcome to Riddhi Siddhi Traders, a premier export company dedicated to delivering the finest farm-fresh agro products from India to the global market. With a commitment to quality, sustainability, and customer satisfaction, we specialize in offering a diverse range of agricultural products sourced directly from India’s fertile lands. Our comprehensive product line includes a variety of fruits, vegetables, spices, grains, and other agricultural commodities that cater to the diverse needs of our international clientele.
+infoSubTitle: Welcome to Riddhi Siddhi Traders, a premier export company
+  dedicated to delivering the finest farm-fresh agro products from India to the
+  global market. With a commitment to quality, sustainability, and customer
+  satisfaction, we specialize in offering a diverse range of agricultural
+  products sourced directly from India’s fertile lands. Our comprehensive
+  product line includes a variety of fruits, vegetables, spices, grains, and
+  other agricultural commodities that cater to the diverse needs of our
+  international clientele.
+productHeroImage: /img/blog-index.jpg
+subheading: Your One-Stop Shop for All Needs
 sliderImages:
   - url: /img/1000189733.png
     alt: "Vegitables "
@@ -34,8 +41,11 @@ categories:
     description: Delicious treats and quick bites
 testimonials:
   - userName: John Smith
-    voc: Great selection of products and excellent delivery service. Will definitely
-      shop again!
+    voc: Riddhi Siddhi Traders is a trusted name in the export business, delivering
+      high-quality products with reliability and professionalism. We ensure
+      timely shipments, competitive pricing, and excellent customer service. Our
+      commitment to quality and customer satisfaction makes us a preferred
+      choice for global trade.
     rating: 5
   - userName: Sarah Johnson
     voc: The quality of items is consistently good. Love the easy ordering process.
