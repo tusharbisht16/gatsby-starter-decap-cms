@@ -38,11 +38,11 @@ export const IndexPageTemplate = ({
     <div>
       <FullScreenSlider images={processedSliderImages} />
       <div className="text-center my-[60px] mx-[20px] lg:mx-[150px]">
-    <p className="text-[35px] font-bold mb-[30px] " >
+    <p className="text-[22px] md:text-[32px] font-bold mb-[30px] " >
 
 {info1}
     </p>
-    <p className="text-[24px] font-semibold" >
+    <p className="text-[16px] md:text-[24px] font-semibold" >
     {infoSubTitle}
     </p>
       </div>
