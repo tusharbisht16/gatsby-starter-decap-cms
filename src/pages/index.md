@@ -18,7 +18,7 @@ sliderImages:
     alt: "Vegitables "
   - url: /img/1000189161.webp
     alt: New Arrivals
-  - url: /img/blog-index.jpg
+  - url: /img/1000198389.png
     alt: Special Offers
 categories:
   - title: "Red Chilli Powder "
