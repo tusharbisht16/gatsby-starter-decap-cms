@@ -4,8 +4,8 @@ const CategoryCards = ({categories}) => {
  
 
   return (
-    <div className="w-full my-[100px] max-w-7xl mx-auto px-4">
-      <h1 className='text-center text-[28px] font-bold mb-[70px]'>Our Products</h1>
+    <div className="w-full my-[50px] lg:my-[80px] max-w-7xl mx-auto px-4">
+      <h1 className='text-center text-[28px] font-bold mb-[70px]'>Our Products Range</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {categories.map((category) => (
           <div 

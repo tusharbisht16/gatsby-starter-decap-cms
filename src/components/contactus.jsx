@@ -20,7 +20,7 @@ const SpinningContact = () => {
 
         {/* WhatsApp Button */}
         <button
-          onClick={() => window.open('https://wa.me/YOUR_NUMBER', '_blank')}
+          onClick={() => window.open('//wa.me/9225385403', '_blank')}
           className={`absolute right-0 bg-green-500 hover:bg-green-600 text-white rounded-full p-3 shadow-lg transition-all duration-500 ${
             isOpen ? '-translate-y-16' : 'translate-y-0 opacity-0 pointer-events-none'
           }`}
@@ -30,7 +30,7 @@ const SpinningContact = () => {
 
         {/* Email Button */}
         <button
-          onClick={() => window.location.href = 'mailto:your@email.com'}
+          onClick={() => window.location.href = 'mailto:info@riddhisiddhitrader.com'}
           className={`absolute right-0 bg-red-500 hover:bg-red-600 text-white rounded-full p-3 shadow-lg transition-all duration-500 ${
             isOpen ? '-translate-y-32' : 'translate-y-0 opacity-0 pointer-events-none'
           }`}

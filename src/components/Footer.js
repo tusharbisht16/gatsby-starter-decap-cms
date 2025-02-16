@@ -65,28 +65,28 @@ const Footer = () => {
                     rel="noopener noreferrer"
                     className="hover:text-white transition duration-300"
                   >
-                    Office No C8, Venus Garden,<br />
-                    Thite Vasti, Kharadi,<br />
-                    Pune City, Pune, Maharashtra<br />
-                    Pin:411014
+                    Office No 4, Building No 1,<br />
+                 Makane Gaon Bodanpada road Navkar complex<br />
+                    City Saphale, District Palghar, Maharashtra <br />
+                    pin: 401102
                   </a>
                 </p>
                 <p>
                   <span className="text-white">Mobile:</span>{' '}
                   <a 
-                    href="tel:+917249310616" 
+                    href="tel:+919225385403" 
                     className="text-green-400 hover:text-green-300 transition duration-300"
                   >
-                    +91 724 931 0616
+                    +91 922 538 5403
                   </a>
                 </p>
                 <p>
                   <span className="text-white">Email:</span>{' '}
                   <a 
-                    href="mailto:info@hindaviempire.com" 
+                    href="mailto:info@riddhisiddhitrader.com" 
                     className="hover:text-white transition duration-300"
                   >
-                    info@hindaviempire.com
+                    info@riddhisiddhitrader.com
                   </a>
                 </p>
               </div>

@@ -30,12 +30,12 @@ const SingleSliderCard = ({userName, voc, index, rating = 0}) => {
     >
       <div>
         <StarRating rating={rating} />
-        <div className="text-[#666666] text-[12px] leading-[16px] lg:text-[16px] lg:leading-[24px]">
+        <div className="text-[#666666] text-[13px] leading-[16px] lg:text-[18px] lg:leading-[24px]">
           {voc}
         </div>
       </div>
       <div
-        className="text-[12px] font-semibold leading-[16px] lg:text-[16px] text-[#6700B5] lg:font-bold lg:leading-[24px] mt-[12px]"
+        className="text-[13px] font-semibold leading-[16px] lg:text-[18px] text-[#6700B5] lg:font-bold lg:leading-[24px] mt-[12px]"
       >
         {userName}
       </div>

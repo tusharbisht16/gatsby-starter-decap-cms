@@ -4,7 +4,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function FullWidthImage(props) {
   const {
-    height = 500,
+   
     img,
     title,
     subheading,
@@ -12,12 +12,12 @@ export default function FullWidthImage(props) {
   } = props;
 
   return (
-    <div className="relative w-full" style={{ height }}>
+    <div className="relative w-full lg:max-h-full" >
       {img?.url ? (
         <img
           src={img.url}
           alt={title || "Featured image"}
-          className="w-full h-auto lg:h-full object-cover"
+          className="w-full h-auto  object-cover"
           style={{
             objectPosition: imgPosition
           }}
@@ -26,29 +26,14 @@ export default function FullWidthImage(props) {
         <GatsbyImage
           image={img}
           alt={title || "Featured image"}
-          className="w-full h-auto lg:h-full"
+          className="w-full h-auto "
           style={{
             objectPosition: imgPosition
           }}
         />
       )}
       
-      {(title || subheading) && (
-        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/40">
-          <div className="container mx-auto px-4 text-center">
-            {title && (
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-                {title}
-              </h1>
-            )}
-            {subheading && (
-              <p className="text-xl md:text-2xl text-white max-w-2xl mx-auto">
-                {subheading}
-              </p>
-            )}
-          </div>
-        </div>
-      )}
+      
     </div>
   );
 }

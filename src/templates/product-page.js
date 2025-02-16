@@ -21,13 +21,13 @@ const processedCategories = (categories || []).map((category) => ({
       {/* Hero Banner */}
       <FullWidthImage
         img={heroImageData}
-        className="mb-[40px]"
+        className="md:mb-[40px]"
       />
       
       {/* Products Section */}
       <div className="content">
-        <div className="w-full py-[60px]">
-          <h1 className="text-[32px] font-bold text-center mb-[40px]">{title}</h1>
+        <div className="w-full lg:py-[40px] ">
+          {/* <h1 className="text-[32px] font-bold text-center mb-[40px]">{title}</h1> */}
           <CategoryCards categories={processedCategories} />
         </div>
       </div>
