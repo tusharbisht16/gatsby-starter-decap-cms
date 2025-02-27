@@ -39,6 +39,14 @@ categories:
   - title: "Cashew "
     image: /img/1000198388.webp
     description: "Cashew "
+  - description: |-
+      "Best black paper powder in india "
+      "Black paper exporter near by me"
+      "Black paper powder"
+      "Exporter"
+      "India"
+    title: "Black Paper Powder "
+    image: /img/1000216765.webp
 testimonials:
   - userName: John Smith
     voc: Excellent quality products and timely delivery! Riddhi Siddhi Traders is a
