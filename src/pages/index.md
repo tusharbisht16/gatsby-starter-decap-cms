@@ -14,7 +14,7 @@ infoSubTitle: Welcome to Riddhi Siddhi Traders, a premier export company
 productHeroImage: /img/blog-index.jpg
 subheading: Your One-Stop Shop for All Needs
 sliderImages:
-  - url: /img/1000195505.png
+  - url: /img/1000216769.webp
     alt: "Vegitables "
   - url: /img/1000189161.webp
     alt: New Arrivals
