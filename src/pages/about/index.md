@@ -2,6 +2,7 @@
 templateKey: about-page
 path: /about
 title: About us
+aboutUsLanding: /img/blog-index.jpg
 ---
 <br>
 

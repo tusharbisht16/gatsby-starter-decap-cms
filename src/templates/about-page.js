@@ -4,6 +4,8 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import HindaviHero from "../components/aboutUsSection2";
+import FullWidthImage from "../components/FullWidthImage";
+import { getImage } from "gatsby-plugin-image";
 const heroProps = {
   heroImage: "../img/aboutUs.jpeg",
   title: "Why Choose Riddhi Siddhi?",
@@ -13,32 +15,42 @@ const heroProps = {
   ]
 };
 
-export const AboutPageTemplate = ({ title, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, content, contentComponent ,aboutUsLanding }) => {
   const PageContent = contentComponent || Content;
-
+  const heroImageData = getImage(aboutUsLanding) || aboutUsLanding;
   return (
-    <section className="py-16 bg-gradient-to-b from-gray-50">
-      <div className="container mx-auto px-4">
-        <div className="flex justify-center">
-          <div className="w-full max-w-4xl">
-            <div className="py-8">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">
-                {title}
-              </h2>
-              <PageContent className="prose max-w-none" content={content} />
-              
-            </div>
-          </div>
-        </div>
+    <div>
+ <FullWidthImage
+        img={heroImageData}
+        className="md:mb-[40px]"
+      />
+       <section className="py-16 bg-gradient-to-b from-gray-50">
+
+<div className="container mx-auto px-4">
+  <div className="flex justify-center">
+    <div className="w-full max-w-4xl">
+      <div className="py-8">
+        <h2 className="text-3xl font-bold text-gray-900 mb-6">
+          {title}
+        </h2>
+        <PageContent className="prose max-w-none" content={content} />
+        
       </div>
-      <HindaviHero  {...heroProps}/>
-    </section>
+    </div>
+  </div>
+</div>
+<HindaviHero  {...heroProps}/>
+</section>
+
+    </div>
+   
   );
 };
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   content: PropTypes.string,
+  aboutUsLanding: PropTypes.object,
   contentComponent: PropTypes.func,
 };
 
@@ -50,6 +62,7 @@ const AboutPage = ({ data }) => {
       <AboutPageTemplate
         contentComponent={HTMLContent}
         title={post.frontmatter.title}
+        aboutUsLanding ={post.frontmatter.aboutUsLanding}
         content={post.html}
       />
     </Layout>
@@ -68,6 +81,11 @@ export const aboutPageQuery = graphql`
       html
       frontmatter {
         title
+      aboutUsLanding {
+          childImageSharp {
+            gatsbyImageData(width: 1920, quality: 64, layout: FULL_WIDTH)
+          }
+        }
       }
     }
   }
