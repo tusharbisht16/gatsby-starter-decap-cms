@@ -1,30 +1,31 @@
 ---
 templateKey: policies-page
 title: Privacy & Data Policies
-description: "Our commitment to protecting your data and privacy is a cornerstone of our service. Review our comprehensive policies below to understand how we safeguard your information."
+description: Our commitment to protecting your data and privacy is a cornerstone
+  of our service. Review our comprehensive policies below to understand how we
+  safeguard your information.
 policies:
   - id: data-collection
-    title: Data Collection & Usage
+    title: "Information We Collect: We may collect the following types of
+      information:"
     content:
-      mainText: We collect and process personal data in accordance with GDPR and applicable data protection laws.
+      mainText: "We collect and process personal data of client "
       subSections:
-        - title: Personal Information
+        - title: "Client Information "
           items:
-            - Contact details (name, email, phone)
-            - Professional information
-            - Login credentials
-            - Payment information
+            - – Personal Information  – Transaction Information  – Technical
+              Information
         - title: Usage Data
           items:
             - Device information
             - IP address
             - Cookies and tracking data
             - User behavior analytics
-
   - id: data-security
     title: Security Measures
     content:
-      mainText: Our security infrastructure employs industry-standard protocols and frameworks.
+      mainText: Our security infrastructure employs industry-standard protocols and
+        frameworks.
       subSections:
         - title: Technical Measures
           items:
@@ -32,11 +33,11 @@ policies:
             - Regular security audits
             - Multi-factor authentication
             - Automated threat detection
-
   - id: user-rights
     title: Your Privacy Rights
     content:
-      mainText: Under applicable data protection laws, you have certain rights regarding your personal data.
+      mainText: Under applicable data protection laws, you have certain rights
+        regarding your personal data.
       subSections:
         - title: Core Rights
           items:
@@ -44,7 +45,6 @@ policies:
             - Right to rectification
             - Right to erasure
             - Right to data portability
-
   - id: compliance
     title: Regulatory Compliance
     content:
