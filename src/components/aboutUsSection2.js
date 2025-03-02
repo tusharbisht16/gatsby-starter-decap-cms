@@ -7,7 +7,7 @@ const HindaviHero = ({
   paragraphs 
 }) => {
   return (
-    <div className="bg-gradient-to-br from-orange-50 to-orange-100 min-h-screen p-8">
+    <div className="bg-gradient-to-br from-orange-50 to-orange-100  p-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 py-12">
         {/* Logo Section */}
         <div className="w-full md:w-1/3 flex justify-center">

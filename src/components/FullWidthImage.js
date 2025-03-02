@@ -12,7 +12,7 @@ export default function FullWidthImage(props) {
   } = props;
 
   return (
-    <div className="relative w-full lg:max-h-full" >
+    <div className=" w-full lg:max-h-full" >
       {img?.url ? (
         <img
           src={img.url}

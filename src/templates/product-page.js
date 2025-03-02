@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { graphql, navigate } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import CategoryCards from "../components/cards";
@@ -12,10 +12,17 @@ export const ProductPageTemplate = ({
   heroImage,
 }) => {
   const heroImageData = getImage(heroImage) || heroImage;
-const processedCategories = (categories || []).map((category) => ({
+  const processedCategories = (categories || []).map((category) => ({
     ...category,
     image: getImage(category.image),
   }));
+  
+  // Handler for when a product card is clicked
+  const handleProductClick = (productId) => {
+    // Navigate to the product detail page with path-based URL
+    navigate(`/products/${productId}`);
+  };
+  
   return (
     <div>
       {/* Hero Banner */}
@@ -26,9 +33,13 @@ const processedCategories = (categories || []).map((category) => ({
       
       {/* Products Section */}
       <div className="content">
-        <div className="w-full lg:py-[40px] ">
-          {/* <h1 className="text-[32px] font-bold text-center mb-[40px]">{title}</h1> */}
-          <CategoryCards categories={processedCategories} />
+        <div className="w-full lg:py-[40px]">
+          {/* Category cards with click handlers */}
+          <CategoryCards 
+            categories={processedCategories} 
+            onProductClick={handleProductClick}
+            showAll = {true}
+          />
         </div>
       </div>
     </div>
@@ -40,6 +51,7 @@ ProductPageTemplate.propTypes = {
   categories: PropTypes.arrayOf(
     PropTypes.shape({
       title: PropTypes.string,
+      id: PropTypes.string,
       image: PropTypes.object,
       description: PropTypes.string,
     })
@@ -86,6 +98,7 @@ export const productPageQuery = graphql`
           }
         }
         categories {
+          id
           title
           image {
             childImageSharp {

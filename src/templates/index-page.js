@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql } from "gatsby";
+import { graphql, navigate } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
@@ -33,7 +33,10 @@ export const IndexPageTemplate = ({
     ...category,
     image: getImage(category.image),
   }));
-
+ const handleProductClick = (productId) => {
+    // Navigate to the product detail page with path-based URL
+    navigate(`/products/${productId}`);
+  };
   return (
     <div>
       <FullScreenSlider images={processedSliderImages} />
@@ -46,7 +49,7 @@ export const IndexPageTemplate = ({
     {infoSubTitle}
     </p>
       </div>
-      <CategoryCards categories={processedCategories} />
+      <CategoryCards categories={processedCategories} onProductClick={handleProductClick} />
       <div className="w-full flex justify-center mb-[30px] ">
       <Link 
               to="/products" 
@@ -88,6 +91,7 @@ IndexPageTemplate.propTypes = {
   ),
   categories: PropTypes.arrayOf(
     PropTypes.shape({
+      id: PropTypes.string,
       title: PropTypes.string,
       image: PropTypes.object,
       description: PropTypes.string,
@@ -141,6 +145,7 @@ export const pageQuery = graphql`
           alt
         }
         categories {
+          id
           title
           image {
             childImageSharp {

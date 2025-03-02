@@ -24,7 +24,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent ,aboutUsLan
         img={heroImageData}
         className="md:mb-[40px]"
       />
-       <section className="py-16 bg-gradient-to-b from-gray-50">
+       <section className="pt-16 bg-gradient-to-b from-gray-50">
 
 <div className="container mx-auto px-4">
   <div className="flex justify-center">

@@ -66,6 +66,7 @@ collections:
               name: "categories",
               widget: "list",
               fields: [
+                { label: "ID", name: "id", widget: "string" },
                 { label: "Title", name: "title", widget: "string" },
                 { label: "Image", name: "image", widget: "image" },
                 { label: "Description", name: "description", widget: "text", required: false }
@@ -205,4 +206,41 @@ collections:
                       ],
                   },
                 ],
+            }
+      - file: "src/pages/policies/index.md"
+        label: "Policies Page"
+        name: "policies"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "policies-page"
+            }
+          - { label: "Description", name: "description", widget: "text" }
+          - {
+              label: "Policies",
+              name: "policies",
+              widget: "list",
+              fields: [
+                { label: "ID", name: "id", widget: "string" },
+                { label: "Title", name: "title", widget: "string" },
+                {
+                  label: "Content",
+                  name: "content",
+                  widget: "object",
+                  fields: [
+                    { label: "Main Text", name: "mainText", widget: "text" },
+                    {
+                      label: "Sub Sections",
+                      name: "subSections",
+                      widget: "list",
+                      fields: [
+                        { label: "Title", name: "title", widget: "string" },
+                        { label: "Items", name: "items", widget: "list" }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }

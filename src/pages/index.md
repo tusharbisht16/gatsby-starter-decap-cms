@@ -22,21 +22,27 @@ sliderImages:
     alt: Special Offers
 categories:
   - title: "Red Chilli Powder "
+    id: 1
     image: /img/1000188852.webp
     description: Premium quality spices from around the world
   - title: "Turmaric Powder "
+    id: 2
     image: /img/1000188976.webp
     description: "Turmaric powder with natural colour "
   - title: "Cumin Powder "
+    id: 3
     image: /img/1000189003.webp
     description: "Cumin Powder "
   - title: "Coriander Powder "
+    id: 4
     image: /img/1000189006.webp
     description: "Coriander Powder "
   - title: "Garam Masala "
+    id: 5
     image: /img/1000198374.webp
     description: "Garam Masala "
   - title: "Cashew "
+    id: 6
     image: /img/1000198388.webp
     description: "Cashew "
   - description: |-
@@ -45,6 +51,7 @@ categories:
       "Black paper powder"
       "Exporter"
       "India"
+    id: 7
     title: "Black Paper Powder "
     image: /img/1000216765.webp
 testimonials:

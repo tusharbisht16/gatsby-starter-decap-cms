@@ -73,6 +73,10 @@ const Navbar = () => {
                 <Link to="/about" className="nav-link text-sm sm:text-base block py-2 hover:bg-gray-100 lg:hover:bg-transparent">About</Link>
               </li>
               <li className="w-full lg:w-auto">
+                <Link to="/policies" className="nav-link text-sm sm:text-base block py-2 hover:bg-gray-100 lg:hover:bg-transparent">Policies</Link>
+              </li>
+
+              <li className="w-full lg:w-auto">
                 <Link to="/products" className="nav-link text-sm sm:text-base block py-2 hover:bg-gray-100 lg:hover:bg-transparent">Products</Link>
               </li>
               <li className="w-full lg:w-auto">
