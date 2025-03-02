@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { graphql, navigate } from "gatsby";
+import { graphql, Link, navigate } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
@@ -92,6 +92,15 @@ export const ProductDetailTemplate = ({
           />
         </div>
       </div>
+       <div className="w-full flex justify-center mb-[30px] ">
+            <Link
+                    to="/products" 
+                    className=" px-6 py-3 bg-green-600 shadow-lg hover:bg-green-700 text-white font-medium rounded-lg transition-colors duration-200"
+                  >
+                    View More
+                  </Link>
+      
+            </div>
       <RequirementsForm /> 
     </div>
   );
