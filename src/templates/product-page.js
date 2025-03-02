@@ -5,6 +5,7 @@ import { getImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import CategoryCards from "../components/cards";
 import FullWidthImage from "../components/FullWidthImage";
+import RequirementsForm from "../components/form";
 
 export const ProductPageTemplate = ({
   title,
@@ -42,6 +43,7 @@ export const ProductPageTemplate = ({
           />
         </div>
       </div>
+      <RequirementsForm /> 
     </div>
   );
 };

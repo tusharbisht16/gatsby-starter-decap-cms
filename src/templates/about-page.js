@@ -6,6 +6,7 @@ import Content, { HTMLContent } from "../components/Content";
 import HindaviHero from "../components/aboutUsSection2";
 import FullWidthImage from "../components/FullWidthImage";
 import { getImage } from "gatsby-plugin-image";
+import RequirementsForm from "../components/form";
 const heroProps = {
   heroImage: "../img/aboutUs.jpeg",
   title: "Why Choose Riddhi Siddhi?",
@@ -41,7 +42,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent ,aboutUsLan
 </div>
 <HindaviHero  {...heroProps}/>
 </section>
-
+<RequirementsForm /> 
     </div>
    
   );

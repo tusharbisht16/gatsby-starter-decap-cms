@@ -6,6 +6,7 @@ import { GatsbyImage } from "gatsby-plugin-image";
 import Layout from "../components/Layout";
 import CategoryCards from "../components/cards";
 import FullWidthImage from "../components/FullWidthImage";
+import RequirementsForm from "../components/form";
 
 export const ProductDetailTemplate = ({
   allCategories,
@@ -93,6 +94,7 @@ export const ProductDetailTemplate = ({
           />
         </div>
       </div>
+      <RequirementsForm /> 
     </div>
   );
 };

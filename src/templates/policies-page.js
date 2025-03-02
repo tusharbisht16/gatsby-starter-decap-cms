@@ -3,10 +3,12 @@ import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import PrivacyPolicyAccordion from "../components/privacyPolicyAccordian";
+import RequirementsForm from "../components/form";
 
 
 export const PoliciesPageTemplate = ({ title, description, policies }) => {
   return (
+    <>
     <div className="container mx-auto py-12 px-4">
       <h1 className="text-3xl md:text-4xl font-bold text-center mb-8">{title}</h1>
       {description && (
@@ -18,7 +20,11 @@ export const PoliciesPageTemplate = ({ title, description, policies }) => {
       <div className="max-w-4xl mx-auto">
         <PrivacyPolicyAccordion privacyData={policies} />
       </div>
+     
     </div>
+    <RequirementsForm /> 
+    </>
+    
   );
 };
 
