@@ -68,8 +68,9 @@ const Footer = () => {
                   >
                     Office No 4, Building No 1,<br />
                  Makane Gaon Bodanpada road Navkar complex<br />
-                    City Saphale, District Palghar, Maharashtra, India<br />
-                    pin: 401102
+                    City Saphale, District Palghar, Maharashtra<br />
+                    pin: 401102 <br/>
+                    India
                   </a>
                 </p>
                 <p>

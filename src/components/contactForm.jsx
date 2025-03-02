@@ -218,8 +218,8 @@ const ContactForm = () => {
             <span className="font-semibold">Main Office</span>
           </div>
           <p className="mt-2 text-sm">Office No 4, Building No 1, Makane Gaon Bodanpada road Navkar complex 
-          District Palghar, City Saphale, Maharashtra 
-          pin: 401102</p>
+          District Palghar, City Saphale, pin: 401102, Maharashtra, India
+          </p>
         </div>
         
         <div className="p-4 bg-gray-50 rounded-lg">

@@ -67,9 +67,7 @@ export const ProductDetailTemplate = ({
               </div>
             )}
             
-            <div className="my-8 border-t border-gray-200 pt-4">
-              <h3 className="text-2xl font-bold mb-4 text-center">Browse More Products</h3>
-            </div>
+            
           </div>
         </>
       ) : (
