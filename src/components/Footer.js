@@ -5,7 +5,8 @@ import {
   Facebook, 
   Instagram, 
   Twitter, 
-  Youtube 
+  Youtube,
+  Linkedin
 } from "lucide-react";
 
 const Footer = () => {
@@ -13,7 +14,7 @@ const Footer = () => {
   const socialLinks = {
     facebook: "https://facebook.com/your-page",
     instagram: "https://www.instagram.com/_riddhi_siddhi_trader",
-    twitter: "https://twitter.com/your-handle",
+    linkedin: "https://linkden.com/your-handle",
     youtube: "https://youtube.com/@riddhisiddhitrader-h4w?si=YP58jZ6ggs2gedPW"
   };
 
@@ -38,7 +39,7 @@ const Footer = () => {
                 { to: "/products", label: "Products" },
                 { to: "/blogs", label: "Blogs" },
                 { to: "/contact", label: "Contact" },
-                { to: "/privacy-policy", label: "Privacy Policy" }
+                { to: "/policies", label: "Privacy Policy" }
               ].map(({ to, label }) => (
                 <li key={to}>
                   <Link 
@@ -67,7 +68,7 @@ const Footer = () => {
                   >
                     Office No 4, Building No 1,<br />
                  Makane Gaon Bodanpada road Navkar complex<br />
-                    City Saphale, District Palghar, Maharashtra <br />
+                    City Saphale, District Palghar, Maharashtra, India<br />
                     pin: 401102
                   </a>
                 </p>
@@ -97,7 +98,7 @@ const Footer = () => {
               {[
                 { Icon: Facebook, link: socialLinks.facebook },
                 { Icon: Instagram, link: socialLinks.instagram },
-                { Icon: Twitter, link: socialLinks.twitter },
+                { Icon: Linkedin, link: socialLinks.linkedin },
                 { Icon: Youtube, link: socialLinks.youtube }
               ].map(({ Icon, link }) => (
                 <a

@@ -94,6 +94,10 @@ collections:
               default: "about-page",
             }
           - { label: "Title", name: "title", widget: "string" }
+          - { label: Info Title, name: info1, widget: string }
+          - { label: Info subTitle, name: infoSubTitle1, widget: string }
+          - { label: Info Title2, name: info2, widget: string }
+          - { label: Info subTitle2, name: infoSubTitle2, widget: string }
           - { label: Ahout us Image, name: aboutUsLanding, widget: image }
           - { label: "Body", name: "body", widget: "markdown" }
       - file: "src/pages/products/index.md"
