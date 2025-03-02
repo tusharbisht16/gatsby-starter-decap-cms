@@ -24,7 +24,13 @@ categories:
   - title: "Red Chilli Powder "
     id: 1
     image: /img/1000188852.webp
-    description: Premium quality spices from around the world
+    description: >+
+      Red Chilli Powder is a vibrant, finely ground spice made from dried red
+      chilies. It adds heat, color, and flavor to dishes and is a key ingredient
+      in Indian, Asian, and global cuisines. Rich in capsaicin, it offers health
+      benefits like boosting metabolism and aiding digestion. Available in mild
+      to extra-hot varieties, it enhances curries, marinades, and snacks.
+
   - title: "Turmaric Powder "
     id: 2
     image: /img/1000188976.webp
