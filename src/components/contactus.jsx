@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaWhatsapp } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 import { IoClose } from 'react-icons/io5';
@@ -6,10 +6,54 @@ import { BsTelephone } from 'react-icons/bs';
 
 const SpinningContact = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [showHint, setShowHint] = useState(false);
+  
+  useEffect(() => {
+    // Show the "Contact us" hint after 2 seconds of inactivity
+    const timer = setTimeout(() => {
+      if (!isOpen) {
+        setShowHint(true);
+      }
+    }, 2000);
+    
+    // Hide the hint when user scrolls
+    const hideHintOnScroll = () => {
+      setShowHint(false);
+      
+      // Reset the timer when scrolling stops
+      setTimeout(() => {
+        if (!isOpen) {
+          setShowHint(true);
+        }
+      }, 2000);
+    };
+    
+    window.addEventListener('scroll', hideHintOnScroll);
+    
+    return () => {
+      clearTimeout(timer);
+      window.removeEventListener('scroll', hideHintOnScroll);
+    };
+  }, [isOpen]);
+
+  // Hide hint when contact menu is opened
+  useEffect(() => {
+    if (isOpen) {
+      setShowHint(false);
+    }
+  }, [isOpen]);
 
   return (
     <div className="fixed right-8 bottom-20 -translate-y-1/2 z-50">
       <div className="relative w-12">
+        {/* Contact Us Hint - Only shows when closed and after 2 seconds */}
+        {showHint && !isOpen && (
+          <div className="absolute -top-12 right-0 bg-white text-gray-800 px-4 py-2 rounded-lg shadow-lg whitespace-nowrap">
+            Contact us
+            <div className="absolute bottom-0 right-4 transform translate-y-1/2 rotate-45 w-4 h-4 bg-white"></div>
+          </div>
+        )}
+      
         {/* Main Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
