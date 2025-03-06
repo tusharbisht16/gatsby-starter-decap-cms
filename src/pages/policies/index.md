@@ -23,11 +23,12 @@ policies:
             - IP address
             - Cookies and tracking data
             - User behavior analytics
-  - id: data-security
-    title: Security Measures
+  - id: Use of Collected Data
+    title: Use of Collected Data
     content:
-      mainText: Our security infrastructure employs industry-standard protocols and
-        frameworks.
+      mainText: Your data is used to process orders, improve our services, and send
+        promotional offers. We do not sell or share your personal information
+        with third parties without consent.
       subSections:
         - title: Technical Measures
           items:
