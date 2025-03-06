@@ -61,4 +61,9 @@ policies:
             - CCPA compliance
             - ISO 27001 certification
             - Privacy Shield Framework
+  - id: User Rights and Data Control
+    title: User Rights and Data Control
+    content:
+      mainText: You have the right to access, update, or request the deletion of your
+        personal information at any time by contacting us.
 ---
