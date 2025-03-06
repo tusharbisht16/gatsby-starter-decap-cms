@@ -36,11 +36,12 @@ policies:
             - Regular security audits
             - Multi-factor authentication
             - Automated threat detection
-  - id: user-rights
-    title: Your Privacy Rights
+  - id: Cookies and Tracking Technologies
+    title: Cookies and Tracking Technologies
     content:
-      mainText: Under applicable data protection laws, you have certain rights
-        regarding your personal data.
+      mainText: Our website uses cookies to enhance user experience, analyze site
+        traffic, and provide personalized content. You can disable cookies
+        through your browser settings.
       subSections:
         - title: Core Rights
           items:
