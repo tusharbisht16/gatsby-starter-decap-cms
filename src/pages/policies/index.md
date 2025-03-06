@@ -49,10 +49,11 @@ policies:
             - Right to rectification
             - Right to erasure
             - Right to data portability
-  - id: compliance
-    title: Regulatory Compliance
+  - id: Data Security Measures
+    title: Data Security Measures
     content:
-      mainText: We maintain compliance with international data protection regulations.
+      mainText: We implement security measures like encryption and secure servers to
+        protect your personal data from unauthorized access, loss, or misuse.
       subSections:
         - title: Frameworks
           items:
