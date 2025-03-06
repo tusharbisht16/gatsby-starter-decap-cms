@@ -11,7 +11,7 @@ infoSubTitle: Welcome to Riddhi Siddhi Traders, a premier export company
   product line includes a variety of fruits, vegetables, spices, grains, and
   other agricultural commodities that cater to the diverse needs of our
   international clientele.
-productHeroImage: /img/blog-index.jpg
+productHeroImage: /img/1000216769.webp
 subheading: Your One-Stop Shop for All Needs
 sliderImages:
   - url: /img/1000216769.webp
