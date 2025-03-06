@@ -1,9 +1,10 @@
 ---
 templateKey: policies-page
 title: Privacy & Data Policies
-description: Our commitment to protecting your data and privacy is a cornerstone
-  of our service. Review our comprehensive policies below to understand how we
-  safeguard your information.
+description: At Riddhi Siddhi Trader, we value your privacy and are committed to
+  protecting your personal information. This Privacy Policy explains how we
+  collect, use, and safeguard your data when you visit our website or interact
+  with our services.
 policies:
   - id: data-collection
     title: "Information We Collect: We may collect the following types of
