@@ -4,24 +4,25 @@ info2: What We Do?
 path: /about
 templateKey: about-page
 title: About us
-infoSubTitle1: At Hindavi Empire, we are dedicated to bringing the essence of
-  India’s rich agricultural heritage to the global market. Established with a
-  vision to connect the world with India’s finest farm-fresh agro products, we
-  pride ourselves on our commitment to quality, sustainability, and customer
-  satisfaction. Our team is passionate about promoting Indian agriculture and
-  ensuring that every product we export reflects the authenticity and excellence
-  of its origin. We are more than just an export company; we are a bridge
-  between the Indian farms and the world’s tables.
-infoSubTitle2: Hindavi Empire specializes in the export of premium agro products
-  straight from the heart of India’s fertile lands. Our extensive product range
-  includes qualities. We operate with a vision to provide premium agro products
-  that not only meet but exceed the expectations of our global clientele. Our
-  operations are grounded in ethical practices and a relentless pursuit of
-  quality, ensuring that every product we export embodies the true essence of
-  Indian agriculture. With a focus on quality control and efficient logistics,
-  Hindavi Empire guarantees that every product is handled with care from farm to
-  export. Our dedication to excellence ensures that you receive the freshest,
-  most authentic agro products that India has to offer.
+infoSubTitle1: At Riddhi Siddhi Traders, we are dedicated to bringing the
+  essence of India’s rich agricultural heritage to the global market.
+  Established with a vision to connect the world with India’s finest farm-fresh
+  agro products, we pride ourselves on our commitment to quality,
+  sustainability, and customer satisfaction. Our team is passionate about
+  promoting Indian agriculture and ensuring that every product we export
+  reflects the authenticity and excellence of its origin. We are more than just
+  an export company; we are a bridge between the Indian farms and the world’s
+  tables.
+infoSubTitle2: Riddhi Siddhi Traders,specializes in the export of premium agro
+  products straight from the heart of India’s fertile lands. Our extensive
+  product range includes qualities. We operate with a vision to provide premium
+  agro products that not only meet but exceed the expectations of our global
+  clientele. Our operations are grounded in ethical practices and a relentless
+  pursuit of quality, ensuring that every product we export embodies the true
+  essence of Indian agriculture. With a focus on quality control and efficient
+  logistics, Hindavi Empire guarantees that every product is handled with care
+  from farm to export. Our dedication to excellence ensures that you receive the
+  freshest, most authentic agro products that India has to offer.
 aboutUsLanding: /img/1000220431.webp
 ---
 <br>
