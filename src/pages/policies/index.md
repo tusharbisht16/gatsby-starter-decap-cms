@@ -7,10 +7,11 @@ description: At Riddhi Siddhi Trader, we value your privacy and are committed to
   with our services.
 policies:
   - id: data-collection
-    title: "Information We Collect: We may collect the following types of
-      information:"
+    title: Personal Information Collection
     content:
-      mainText: "We collect and process personal data of client "
+      mainText: We collect personal information such as name, email, phone number, and
+        address when you place an order, subscribe to our newsletter, or contact
+        us.
       subSections:
         - title: "Client Information "
           items:
