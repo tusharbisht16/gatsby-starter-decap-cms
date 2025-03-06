@@ -6,7 +6,7 @@ description: At Riddhi Siddhi Trader, we value your privacy and are committed to
   collect, use, and safeguard your data when you visit our website or interact
   with our services.
 policies:
-  - id: data-collection
+  - id: Personal Information Collection
     title: Personal Information Collection
     content:
       mainText: We collect personal information such as name, email, phone number, and
