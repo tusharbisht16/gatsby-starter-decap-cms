@@ -13,7 +13,7 @@ infoSubTitle1: At Riddhi Siddhi Traders, we are dedicated to bringing the
   reflects the authenticity and excellence of its origin. We are more than just
   an export company; we are a bridge between the Indian farms and the world’s
   tables.
-infoSubTitle2: Riddhi Siddhi Traders,specializes in the export of premium agro
+infoSubTitle2: Riddhi Siddhi Traders, specializes in the export of premium agro
   products straight from the heart of India’s fertile lands. Our extensive
   product range includes qualities. We operate with a vision to provide premium
   agro products that not only meet but exceed the expectations of our global
