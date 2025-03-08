@@ -130,3 +130,19 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     })
   }
 }
+
+exports.createSchemaCustomization = ({ actions }) => {
+  const { createTypes } = actions
+  const typeDefs = `
+    type MarkdownRemarkFrontmatterPoliciesContent {
+      mainText: String!
+      subSections: [MarkdownRemarkFrontmatterPoliciesContentSubSections]
+    }
+    
+    type MarkdownRemarkFrontmatterPoliciesContentSubSections {
+      title: String!
+      items: [String]
+    }
+  `
+  createTypes(typeDefs)
+}
