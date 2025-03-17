@@ -47,17 +47,13 @@ categories:
     id: 5
     image: /img/1000198374.webp
     description: "Garam Masala "
-  - title: "Cashew "
-    id: 6
-    image: /img/1000198388.webp
-    description: "Cashew "
   - description: |-
       "Best black paper powder in india "
       "Black paper exporter near by me"
       "Black paper powder"
       "Exporter"
       "India"
-    id: 7
+    id: "6"
     title: "Black Paper Powder "
     image: /img/1000216765.webp
   - description: >-
@@ -79,7 +75,7 @@ categories:
       ✔ Ethically Sourced – Direct from Kashmiri farmers
     image: /img/1000241021.jpg
     title: Saffron
-    id: "8"
+    id: "7"
 testimonials:
   - userName: John Smith
     voc: Excellent quality products and timely delivery! Riddhi Siddhi Traders is a
