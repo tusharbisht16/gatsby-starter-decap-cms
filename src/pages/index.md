@@ -60,6 +60,26 @@ categories:
     id: 7
     title: "Black Paper Powder "
     image: /img/1000216765.webp
+  - description: >-
+      Premium Kashmir Saffron – Pure & Aromatic
+
+
+      At Riddhi Siddhi Trader, we offer 100% pure Kashmir Saffron, sourced from the renowned fields of Pampore, Jammu & Kashmir. With its deep red color, rich aroma, and high crocin content, our saffron is perfect for cooking, health, and skincare.
+
+
+      Why Choose Our Saffron?
+
+
+      ✔ Pure & Natural – No additives
+
+      ✔ Long, Thick Stigmas – Premium quality
+
+      ✔ Rich Aroma & Flavor – Perfect for culinary & wellness
+
+      ✔ Ethically Sourced – Direct from Kashmiri farmers
+    image: /img/1000241021.jpg
+    title: Saffron
+    id: "8"
 testimonials:
   - userName: John Smith
     voc: Excellent quality products and timely delivery! Riddhi Siddhi Traders is a
