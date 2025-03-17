@@ -21,7 +21,7 @@ sliderImages:
   - url: /img/1000198389.png
     alt: Special Offers
 categories:
-  - title: "Red Chilli Powder "
+  - title: "Red Chilli "
     id: 1
     image: /img/1000188852.webp
     description: >+
